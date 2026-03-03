@@ -758,6 +758,95 @@
 
     .gold-line { width: 60px; height: 2px; background: linear-gradient(90deg, var(--gold-dark), var(--gold)); margin: 0 auto 40px; }
 
+    /* 損失シミュレーター */
+    .simulator-section {
+      padding: 80px 20px;
+      background-color: var(--dark2);
+      display: flex;
+      justify-content: center;
+    }
+    .sim-container {
+      max-width: 800px;
+      width: 100%;
+      background: var(--dark3);
+      border: 1px solid var(--gold-dark);
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .sim-badge {
+      display: inline-block;
+      color: var(--black);
+      background-color: var(--gold);
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .sim-header h2 {
+      font-size: 28px;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .sim-header p {
+      color: var(--gray-light);
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    .sim-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .sim-select {
+      padding: 14px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      background-color: var(--dark4);
+      color: var(--white);
+      border: 1px solid #444;
+      outline: none;
+      flex: 1;
+      min-width: 200px;
+      font-family: inherit;
+    }
+    .sim-select:focus { border-color: var(--gold); }
+    .sim-btn {
+      padding: 14px 30px;
+      font-size: 16px;
+      flex: 1;
+      min-width: 200px;
+      cursor: pointer;
+      border: none;
+    }
+    .sim-result {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px dashed #444;
+      transition: opacity 0.5s ease;
+    }
+    .sim-result.hidden { display: none; opacity: 0; }
+    .sim-result-text {
+      color: var(--gray-light);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .sim-amount {
+      font-size: 48px;
+      color: var(--red-soft);
+      font-weight: 900;
+      margin: 10px 0;
+      text-shadow: 0 0 10px rgba(224,48,48,0.3);
+    }
+    .sim-warning { color: var(--white); font-size: 15px; line-height: 1.6; }
+    .sim-warning .highlight { color: var(--gold); font-weight: 700; }
+
     /* CALLOUT BOX */
     .callout-box {
       background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.03));
@@ -805,6 +894,46 @@
   <div class="hero-cta-wrap">
     <a href="#contact" class="btn-gold">Get My Free Audit — No Strings Attached</a>
     <a href="#before-after" class="btn-outline">See Real Results & Numbers</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     REVENUE LOSS SIMULATOR
+═══════════════════════════════════════ -->
+<section class="simulator-section reveal" id="simulator">
+  <div class="sim-container">
+    <div class="sim-header">
+      <span class="sim-badge">Interactive Audit</span>
+      <h2>Calculate Your Silent Revenue Loss</h2>
+      <p>Select your location and cuisine to see how much money you are leaving on the table every single month by not ranking #1.</p>
+    </div>
+    <div class="sim-controls">
+      <select id="sim-city" class="sim-select">
+        <option value="" disabled selected>Select City</option>
+        <option value="Torrance">Torrance</option>
+        <option value="Redondo Beach">Redondo Beach</option>
+        <option value="Hermosa Beach">Hermosa Beach</option>
+        <option value="Manhattan Beach">Manhattan Beach</option>
+        <option value="Gardena">Gardena</option>
+      </select>
+      <select id="sim-cuisine" class="sim-select">
+        <option value="" disabled selected>Select Cuisine</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Korean">Korean</option>
+        <option value="Japanese">Japanese</option>
+        <option value="American">American / Burgers</option>
+      </select>
+      <button class="btn-gold sim-btn" onclick="calculateLoss()">Reveal My Loss</button>
+    </div>
+    <div id="sim-result" class="sim-result hidden">
+      <p class="sim-result-text">Estimated Monthly Revenue Bleeding to Competitors:</p>
+      <h3 id="sim-amount" class="sim-amount">$0</h3>
+      <p class="sim-warning">
+        Right now, diners searching for <span id="res-cuisine" class="highlight">...</span> in <span id="res-city" class="highlight">...</span> are choosing your competitors.
+        <strong>Stop giving away your profit.</strong>
+      </p>
+    </div>
   </div>
 </section>
 
@@ -1358,7 +1487,7 @@
     </div>
     <div class="contact-row">
       <div class="contact-ico">📧</div>
-      <a href="mailto:m.nonaka@akanon-intl.com" style="color:inherit; text-decoration:none; font-weight:600;">Send an Email</a>
+      <a href="/cdn-cgi/l/email-protection#e885c6868786898389a8898389868786c581869c84c68b8785" style="color:inherit; text-decoration:none; font-weight:600;">Send an Email</a>
     </div>
     <a href="https://calendly.com/m-nonaka-akanon-intl/30min" class="btn-gold" style="width:100%; text-align:center; margin-top:12px;">
       Book My Free 30-Min Audit →
@@ -1378,7 +1507,7 @@
 <!-- ═══════════════════════════════════════
      SCRIPTS
 ═══════════════════════════════════════ -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
   const revealObserver = new IntersectionObserver((entries) => {
@@ -1408,6 +1537,38 @@
     });
   }, { threshold: 0.4 });
   urgencyObs.observe(document.querySelector('.urgency-section'));
+
+  // Simulator logic
+  function calculateLoss() {
+    const city = document.getElementById('sim-city').value;
+    const cuisine = document.getElementById('sim-cuisine').value;
+
+    if (!city || !cuisine) {
+      alert('Please select both City and Cuisine.');
+      return;
+    }
+
+    document.getElementById('res-city').innerText = city;
+    document.getElementById('res-cuisine').innerText = cuisine;
+
+    const baseLoss = 8500;
+    const randomFactor = Math.floor(Math.random() * 5000) + 2000;
+    const totalLoss = baseLoss + randomFactor;
+
+    const resultDiv = document.getElementById('sim-result');
+    resultDiv.classList.remove('hidden');
+
+    const amountEl = document.getElementById('sim-amount');
+    let cur = 0;
+    const step = totalLoss / (1800 / 16);
+    const t = setInterval(() => {
+      cur = Math.min(cur + step, totalLoss);
+      amountEl.textContent = '$' + Math.floor(cur).toLocaleString();
+      if (cur >= totalLoss) clearInterval(t);
+    }, 16);
+
+    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
 </script>
 </body>
 </html>
