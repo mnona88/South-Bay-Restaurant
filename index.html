@@ -198,6 +198,16 @@
     }
     .btn-outline:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
 
+    /* [CHANGE 4] CTA micro-copy */
+    .cta-micro {
+      font-size: 11px;
+      color: var(--gray);
+      letter-spacing: 0.5px;
+      margin-top: 12px;
+      text-align: center;
+      font-weight: 500;
+    }
+
     /* PAIN SECTION */
     .pain-section {
       background: linear-gradient(180deg, var(--black) 0%, #0e0700 50%, var(--black) 100%);
@@ -520,6 +530,27 @@
       margin-bottom: 24px;
       margin-top: 16px;
     }
+
+    /* [CHANGE 1] Anchoring price styles */
+    .roi-card-regular-price {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--gray);
+      text-decoration: line-through;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+    .roi-card-founding-label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 6px;
+    }
+
     .roi-card-price {
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
@@ -529,6 +560,17 @@
       margin-bottom: 6px;
     }
     .roi-card-period { font-size: 13px; color: var(--gray); margin-bottom: 32px; }
+
+    /* [CHANGE 1] Slots note */
+    .roi-card-slots-note {
+      font-size: 10px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.5px;
+      margin-top: -24px;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
     .roi-card-features {
       list-style: none;
       text-align: left;
@@ -858,7 +900,6 @@
     .callout-box p { font-size: 16px; color: #ccc; line-height: 1.9; }
     .callout-box p strong { color: var(--gold-light); }
   </style>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KGZN1TXBQL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -892,7 +933,11 @@
   </p>
 
   <div class="hero-cta-wrap">
-    <a href="#contact" class="btn-gold">Get My Free Audit — No Strings Attached</a>
+    <!-- [CHANGE 4] micro-copy added below each CTA -->
+    <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+      <a href="#contact" class="btn-gold">Get My Free Audit — No Strings Attached</a>
+      <p class="cta-micro">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
+    </div>
     <a href="#before-after" class="btn-outline">See Real Results & Numbers</a>
   </div>
 </section>
@@ -920,9 +965,9 @@
         <option value="" disabled selected>Select Cuisine</option>
         <option value="Italian">Italian</option>
         <option value="Mexican">Mexican</option>
-        <option value="Korean">Korean</option>
-        <option value="Japanese/Sushi">Japanese/Sushi</option>
-        <option value="American">American / Burgers</option>
+        <option value="Seafood">Seafood</option>
+        <option value="Japanese/Sushi">Japanese / Sushi</option>
+        <option value="American">American</option>
       </select>
       <button class="btn-gold sim-btn" onclick="calculateLoss()">Reveal My Loss</button>
     </div>
@@ -956,7 +1001,6 @@
       </p>
     </div>
 
-    <!-- LOSS INFOGRAPHIC -->
     <div class="reveal" style="margin-bottom: 56px;">
       <img src="loss_infographic.jpg" alt="Revenue being lost without digital optimization" style="width:100%; border-radius:12px; display:block; border:1px solid rgba(201,168,76,0.2);" />
     </div>
@@ -972,7 +1016,6 @@
       </p>
     </div>
 
-    <!-- PHOTO PROOF -->
     <div class="reveal" style="margin-bottom: 32px;">
       <h3 style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:18px; color:var(--gray-light); margin-bottom:16px; letter-spacing:1px;">
         📸 One photo is the difference between a scroll-past and a reservation
@@ -995,7 +1038,6 @@
       </div>
     </div>
 
-    <!-- STATS -->
     <div class="stats-row reveal" style="margin-top: 3px;">
       <div class="stat-box">
         <div class="stat-num gold-text">42<span style="font-size:0.5em">%</span></div>
@@ -1105,9 +1147,10 @@
           <div class="ba-metric-label">Followers</div>
           <div class="ba-metric-value">143 followers → <strong>4,821 local followers</strong><br/>Real South Bay diners in your market</div>
         </div>
+        <!-- [CHANGE 2] Updated Reels copy -->
         <div class="ba-metric">
           <div class="ba-metric-label">Reels & Video</div>
-          <div class="ba-metric-value">Zero → <strong>3x weekly cooking & sizzle reels</strong><br/>New customer walk-ins up +28%</div>
+          <div class="ba-metric-value">Zero → <strong>Weekly AI-Optimized Reels & Automated Posting</strong><br/>Client shoots simple 10-sec clips — our AI-driven system handles editing, GEO-tagging, and publishing</div>
         </div>
         <div class="ba-metric">
           <div class="ba-metric-label">Story Highlights</div>
@@ -1139,12 +1182,14 @@
         When someone asks ChatGPT, Gemini, or Siri "What's the best restaurant in the South Bay?" —
         the answer isn't random. It's based on structured data, keyword density, and online authority.
         We make sure your restaurant is the one the AI recommends.<br/>
+        <!-- [CHANGE 3] Updated projection framing -->
         <strong style="color:var(--white)">
-          (Client result) AI mention rate increased up to +300% within 30 days of GEO optimization.
+          (South Bay Market Strategy) Restaurants implementing structured data + GEO optimization
+          are projected to see AI mention rates increase dramatically — here's the mechanism behind it.
         </strong>
         <span style="display:block; margin-top:10px; font-size:12px; line-height:1.6; color:rgba(255,255,255,0.55);">
-          *Defined as: # of times the restaurant name appeared in top results across repeated identical AI prompts.
-          Results vary by location, category, and competitive landscape.
+          *AI recommendation frequency is directly tied to structured data richness, keyword authority, and review velocity —
+          all factors we systematically optimize. Individual outcomes vary by competitive landscape.
         </span>
       </p>
     </div>
@@ -1160,15 +1205,17 @@
       </div>
     </div>
 
+    <!-- [CHANGE 3] Updated ai-fact copy -->
     <div class="ai-fact reveal">
       <div class="ai-fact-text">
-        <strong>(Real client case)</strong> By converting menus to AI-readable text, embedding strategic keywords,
-        and implementing structured data markup, we documented that ChatGPT and Gemini began surfacing
-        the restaurant prominently when asked "best restaurants in [area]" —
-        with <strong>AI mention rates up to +300% within the first 30 days</strong>.
-        Most restaurants have zero GEO strategy. This is your unfair advantage.<br/>
+        <strong>(Data-Driven Projection)</strong> AI assistants like ChatGPT and Gemini surface restaurants
+        based on three measurable signals: <strong>structured data markup</strong> (machine-readable menus and schema),
+        <strong>keyword authority</strong> (consistent terminology across all platforms), and
+        <strong>review velocity</strong> (volume and recency of responses). By systematically optimizing
+        all three, we create the conditions for your restaurant to be recommended — not by luck, but by design.
+        Most South Bay restaurants have zero GEO strategy in place. That gap is your unfair advantage.<br/>
         <span style="display:block; margin-top:10px; font-size:12px; line-height:1.6; color:rgba(255,255,255,0.55);">
-          *Metrics based on repeated prompt testing across platforms. Individual results vary.
+          *Projection based on published AI ranking research and structured data best practices. Individual results vary by category and competition.
         </span>
       </div>
     </div>
@@ -1229,7 +1276,7 @@
             <td class="metric-name">AI Recommendation Rate (GEO)</td>
             <td class="before-val">Near Zero</td>
             <td class="arrow">→</td>
-            <td class="after-val">+300%</td>
+            <td class="after-val">Significant Uplift</td>
             <td>Structured data + AI-readable menu text</td>
           </tr>
           <tr>
@@ -1237,7 +1284,8 @@
             <td class="before-val">143</td>
             <td class="arrow">→</td>
             <td class="after-val">4,000+</td>
-            <td>3x weekly Reels + save-optimized content</td>
+            <!-- [CHANGE 2] Updated Reels copy in table -->
+            <td>Weekly AI-Optimized Reels + automated posting pipeline</td>
           </tr>
           <tr>
             <td class="metric-name">Review Response Rate</td>
@@ -1250,39 +1298,179 @@
       </table>
     </div>
 
-    <div class="roi-cards-row reveal" style="margin-top: 64px;">
-      <div class="roi-card">
-        <div class="roi-card-plan">Starter</div>
-        <div class="roi-card-price">$900</div>
-        <div class="roi-card-period">First Month — Try It, Risk Free</div>
-        <ul class="roi-card-features">
-          <li>Full Google Business Profile overhaul</li>
-          <li>30+ professional photos uploaded & tagged</li>
-          <li>Every existing review replied to</li>
-          <li>Instagram profile rebuilt from scratch</li>
-          <li>Competitor analysis report (PDF)</li>
+    <!-- NEW 3-CARD PRICING -->
+    <style>      .new-pricing-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        justify-content: center;
+        margin-top: 64px;
+      }
+      .np-card {
+        background: var(--dark2);
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 0;
+        padding: 44px 32px;
+        width: 100%;
+        max-width: 340px;
+        text-align: center;
+        position: relative;
+        transition: background 0.3s, transform 0.3s;
+        flex: 1 1 280px;
+      }
+      .np-card:hover { background: var(--dark3); transform: translateY(-4px); }
+      .np-card.popular {
+        background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.04));
+        border: 1px solid rgba(201,168,76,0.4);
+        transform: scale(1.03);
+        z-index: 2;
+      }
+      .np-card.popular:hover { transform: scale(1.03) translateY(-4px); }
+      .np-badge {
+        position: absolute;
+        top: -14px; left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 5px 18px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+      .np-card h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+        color: var(--white);
+        margin: 8px 0 6px;
+        letter-spacing: 0.5px;
+      }
+      .np-card .np-sub {
+        font-size: 12px;
+        color: var(--gray);
+        margin-bottom: 20px;
+      }
+      .np-anchor {
+        font-size: 13px;
+        color: var(--gray);
+        text-decoration: line-through;
+        height: 18px;
+        margin-bottom: 4px;
+      }
+      .np-setup {
+        font-size: 12px;
+        color: var(--gray-light);
+        margin-bottom: 4px;
+        letter-spacing: 0.5px;
+      }
+      .np-price {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 52px;
+        color: var(--white);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .np-price span { font-size: 0.38em; color: var(--gray); font-weight: 400; }
+      .popular .np-price { color: var(--gold-light); }
+      .np-features {
+        list-style: none;
+        padding: 0;
+        margin: 24px 0 28px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+      .np-features li {
+        font-size: 13px;
+        color: #bbb;
+        padding-left: 22px;
+        position: relative;
+        line-height: 1.5;
+      }
+      .np-features li::before {
+        content: '✓';
+        color: var(--gold);
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+      }
+      .np-features li.off { color: #555; }
+      .np-features li.off::before { content: '✕'; color: #444; }
+      .np-microcopy {
+        font-size: 10px;
+        color: rgba(255,255,255,0.3);
+        margin-top: 10px;
+        font-style: italic;
+        letter-spacing: 0.3px;
+      }
+    </style>
+
+    <div class="new-pricing-row reveal">
+
+      <!-- DIY BLUEPRINT -->
+      <div class="np-card">
+        <h3>DIY Blueprint</h3>
+        <p class="np-sub">We build the foundation, you run it.</p>
+        <div class="np-anchor"></div>
+        <div class="np-setup">One-time Setup</div>
+        <div class="np-price">$1,500</div>
+        <ul class="np-features">
+          <li>Complete GBP Overhaul &amp; Pro Photos</li>
+          <li>AI/GEO Menu Markup</li>
+          <li>Competitor Analysis Report</li>
+          <li>30-Day Content Playbook</li>
+          <li class="off">Weekly AI-Optimized Reels</li>
+          <li class="off">24hr Review Response Protocol</li>
         </ul>
-        <a href="#contact" class="btn-outline" style="display:block; text-align:center; padding:14px 24px; font-size:13px;">Start Here</a>
+        <a href="#contact" class="btn-outline" style="display:block; text-align:center; padding:13px 24px; font-size:13px;">Get The Blueprint</a>
+        <p class="np-microcopy">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
       </div>
-      <div class="roi-card featured">
-        <div class="roi-card-badge">Best Value — Most Popular</div>
-        <div class="roi-card-plan" style="margin-top:28px;">Growth</div>
-        <div class="roi-card-price">$1,500</div>
-        <div class="roi-card-period">Per Month — Fully Done For You (~$50/day)</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.6);margin:-18px 0 22px;">
-          Photos + GBP + Reviews + Social + Monthly Report — all handled
-        </div>
-        <ul class="roi-card-features">
-          <li>Everything in Starter, plus:</li>
-          <li>4 weekly Google posts (menu, events, specials)</li>
-          <li>3x weekly Instagram Reels posted for you</li>
-          <li>AI search (GEO) optimization — updated monthly</li>
-          <li>Yelp profile optimization & review responses</li>
-          <li>Monthly performance report with real numbers</li>
-          <li>All new reviews answered within 24 hours</li>
+
+      <!-- GROWTH PARTNER -->
+      <div class="np-card popular">
+        <div class="np-badge">Case Study Offer — 2 Spots Left</div>
+        <h3 style="margin-top:18px;">Growth Partner</h3>
+        <p class="np-sub">Hands-free growth. We handle the heavy lifting.</p>
+        <div class="np-anchor">Regular: $3,000 / mo</div>
+        <div class="np-setup">$1,500 Setup +</div>
+        <div class="np-price">$1,200<span>/mo</span></div>
+        <ul class="np-features">
+          <li><strong style="color:var(--white);">Full Professional Setup Included, plus:</strong></li>
+          <li>Weekly AI-Optimized Reels — <strong style="color:var(--white);">We handle all editing</strong></li>
+          <li><strong style="color:var(--white);">Full 24hr Review Response Protocol</strong> (Hands-off for you)</li>
+          <li>4× Monthly SEO-Driven Google Posts</li>
+          <li>Monthly ROI &amp; Growth Performance Report</li>
+          <li class="off">On-site Video Production</li>
         </ul>
-        <a href="#contact" class="btn-gold" style="display:block; text-align:center; padding:14px 24px; font-size:13px;">Let's Get Started</a>
+        <a href="#contact" class="btn-gold" style="display:block; text-align:center; padding:13px 24px; font-size:13px;">Claim My Case Study Spot</a>
+        <p class="np-microcopy">*Requires case study data sharing.</p>
       </div>
+
+      <!-- FRACTIONAL CMO -->
+      <div class="np-card">
+        <h3>Fractional CMO</h3>
+        <p class="np-sub">Enterprise-level digital dominance.</p>
+        <div class="np-anchor"></div>
+        <div class="np-setup">$0 Setup Fee</div>
+        <div class="np-price">$4,500<span>/mo</span></div>
+        <ul class="np-features">
+          <li><strong style="color:var(--white);">Everything in Growth, plus:</strong></li>
+          <li>Bi-weekly On-site Pro Shooting</li>
+          <li>Local Influencer Management</li>
+          <li>Full Social Media Takeover</li>
+          <li>Quarterly Menu Engineering Consulting</li>
+          <li>Priority 24/7 Support</li>
+        </ul>
+        <a href="#contact" class="btn-outline" style="display:block; text-align:center; padding:13px 24px; font-size:13px;">Apply For Partnership</a>
+        <p class="np-microcopy">*Limited availability.</p>
+      </div>
+
     </div>
   </div>
 </div>
@@ -1340,13 +1528,14 @@
           <li>Deliver competitor analysis report — see exactly where you stand vs. the South Bay competition</li>
         </ul>
       </div>
+      <!-- [CHANGE 2] Updated ongoing copy -->
       <div class="tl-item">
         <div class="tl-dot"></div>
         <div class="tl-phase">Month 1 Onward — Ongoing</div>
         <div class="tl-title">Continuous Management & Monthly Reporting</div>
         <ul class="tl-list">
           <li>4 weekly Google posts: seasonal specials, events, behind-the-scenes</li>
-          <li>3x weekly Instagram Reels and feed posts, published for you</li>
+          <li>Weekly AI-Optimized Reels & Automated Posting — you shoot a simple 10-sec clip, our AI-driven system handles editing, GEO-tagging, and publishing</li>
           <li>Every new review answered within 24 hours — no exceptions</li>
           <li>Monthly report delivered to your inbox: rankings, traffic, follower growth, new customer data</li>
         </ul>
@@ -1383,7 +1572,11 @@
         categories optimized, menu entered, reviews responded to, 4 posts published —
         you get a prorated refund for anything not completed. No arguments.
       </p>
-      <a href="#contact" class="btn-gold">Get My Free Audit — Zero Commitment</a>
+      <!-- [CHANGE 4] micro-copy -->
+      <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+        <a href="#contact" class="btn-gold">Get My Free Audit — Zero Commitment</a>
+        <p class="cta-micro">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
+      </div>
     </div>
 
     <table class="compare-table reveal">
@@ -1458,9 +1651,13 @@
       <div class="counter-lbl">Days Your Competitor Has Had the Edge</div>
     </div>
   </div>
-  <a href="#contact" class="btn-gold" style="font-size:16px; padding:20px 64px;">
-    Claim Your Free Audit → Stop the Bleed
-  </a>
+  <!-- [CHANGE 4] micro-copy -->
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+    <a href="#contact" class="btn-gold" style="font-size:16px; padding:20px 64px;">
+      Claim Your Free Audit → Stop the Bleed
+    </a>
+    <p class="cta-micro">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
+  </div>
 </div>
 
 <!-- ═══════════════════════════════════════
@@ -1489,9 +1686,11 @@
       <div class="contact-ico">📧</div>
       <a href="/cdn-cgi/l/email-protection#e885c6868786898389a8898389868786c581869c84c68b8785" style="color:inherit; text-decoration:none; font-weight:600;">Send an Email</a>
     </div>
+    <!-- [CHANGE 4] micro-copy on final CTA -->
     <a href="https://calendly.com/m-nonaka-akanon-intl/30min" class="btn-gold" style="width:100%; text-align:center; margin-top:12px;">
       Book My Free 30-Min Audit →
     </a>
+    <p class="cta-micro" style="text-align:center; width:100%;">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
   </div>
 </div>
 
@@ -1504,18 +1703,14 @@
   <p style="margin-top:8px; font-size:11px; opacity:0.5;">© 2026 All Rights Reserved. Confidential.</p>
 </footer>
 
-<!-- ═══════════════════════════════════════
-     SCRIPTS
-═══════════════════════════════════════ -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Reveal on scroll
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
   const revealEls = document.querySelectorAll('.reveal');
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
   }, { threshold: 0.08 });
   revealEls.forEach(el => revealObserver.observe(el));
 
-  // Animated counters
   function runCounter(el, end, prefix, suffix, dur) {
     let cur = 0;
     const step = end / (dur / 16);
@@ -1538,26 +1733,17 @@
   }, { threshold: 0.4 });
   urgencyObs.observe(document.querySelector('.urgency-section'));
 
-  // Simulator logic
   function calculateLoss() {
     const city = document.getElementById('sim-city').value;
     const cuisine = document.getElementById('sim-cuisine').value;
-
-    if (!city || !cuisine) {
-      alert('Please select both City and Cuisine.');
-      return;
-    }
-
+    if (!city || !cuisine) { alert('Please select both City and Cuisine.'); return; }
     document.getElementById('res-city').innerText = city;
     document.getElementById('res-cuisine').innerText = cuisine;
-
     const baseLoss = 8500;
     const randomFactor = Math.floor(Math.random() * 5000) + 2000;
     const totalLoss = baseLoss + randomFactor;
-
     const resultDiv = document.getElementById('sim-result');
     resultDiv.classList.remove('hidden');
-
     const amountEl = document.getElementById('sim-amount');
     let cur = 0;
     const step = totalLoss / (1800 / 16);
@@ -1566,7 +1752,6 @@
       amountEl.textContent = '$' + Math.floor(cur).toLocaleString();
       if (cur >= totalLoss) clearInterval(t);
     }, 16);
-
     resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 </script>
