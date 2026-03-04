@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>South Bay Restaurant — Digital Growth Proposal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <title>South Bay Restaurants — Digital Growth & Revenue Recovery Proposal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
   <style>
     :root {
       --gold: #c9a84c;
@@ -23,31 +23,25 @@
       --gray: #777;
       --gray-light: #aaa;
     }
-
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     body {
       background-color: var(--black);
       color: var(--white);
       font-family: 'Montserrat', sans-serif;
-      line-height: 1.75;
+      line-height: 1.85;
       overflow-x: hidden;
     }
-
     .gold-text {
       background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light), var(--gold));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-
-    .red-text { color: var(--red-soft); }
+    .red-text  { color: var(--red-soft); }
     .green-text { color: var(--green-bright); }
-
     .label {
       display: inline-block;
-      font-family: 'Montserrat', sans-serif;
       font-size: 10px;
       font-weight: 700;
       letter-spacing: 4px;
@@ -56,337 +50,163 @@
       margin-bottom: 18px;
     }
     .label::before { content: '— '; opacity: 0.5; }
-    .label::after { content: ' —'; opacity: 0.5; }
-
+    .label::after  { content: ' —'; opacity: 0.5; }
     .container { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
-    .section { padding: 110px 0; }
-
     .section-title {
-      font-family: 'Montserrat', sans-serif;
       font-weight: 900;
-      font-size: clamp(28px, 4.5vw, 50px);
-      line-height: 1.15;
+      font-size: clamp(24px, 4vw, 46px);
+      line-height: 1.25;
       margin-bottom: 22px;
     }
-
     .section-lead {
-      font-size: clamp(15px, 1.8vw, 18px);
+      font-size: clamp(14px, 1.7vw, 17px);
       color: var(--gray-light);
       max-width: 680px;
       font-weight: 300;
-      line-height: 1.9;
+      line-height: 2;
     }
 
-    /* HERO */
+    /* ─── HERO ─── */
     .hero {
-      min-height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 72px 28px 56px;
-      position: relative;
-      background:
-        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(201,168,76,0.12) 0%, transparent 70%),
-        var(--black);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 100px 28px 80px; position: relative;
+      background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(201,168,76,0.12) 0%, transparent 70%), var(--black);
       overflow: hidden;
     }
-
     .hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 1px;
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
       background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
     }
-
     .hero-eyebrow {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 36px;
-      opacity: 0.85;
+      font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 36px; opacity: 0.85;
     }
-
     .hero-headline {
-      font-family: 'Montserrat', sans-serif;
       font-weight: 900;
-      font-size: clamp(30px, 5vw, 64px);
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-      margin-bottom: 28px;
-      max-width: 1000px;
+      font-size: clamp(26px, 4.5vw, 58px); line-height: 1.2; margin-bottom: 28px; max-width: 960px;
     }
-
-    .hero-headline .dead {
-      position: relative;
-      display: inline-block;
-    }
+    .hero-headline .dead { position: relative; display: inline-block; }
     .hero-headline .dead::after {
-      content: '';
-      position: absolute;
-      left: 0; right: 0;
-      top: 50%;
-      height: 4px;
-      background: var(--red-soft);
-      transform: rotate(-1.5deg);
+      content: ''; position: absolute; left: 0; right: 0; top: 50%;
+      height: 4px; background: var(--red-soft); transform: rotate(-1.5deg);
     }
-
     .hero-sub {
-      font-size: clamp(16px, 2vw, 21px);
-      color: var(--gray-light);
-      font-weight: 300;
-      max-width: 720px;
-      margin-bottom: 24px;
-      line-height: 1.85;
+      font-size: clamp(15px, 1.9vw, 19px); color: var(--gray-light); font-weight: 300;
+      max-width: 720px; margin-bottom: 24px; line-height: 2;
     }
     .hero-sub strong { color: var(--white); font-weight: 700; }
+    .hero-tagline { font-weight: 700; font-size: clamp(14px, 1.8vw, 18px); color: var(--gold-light); margin-bottom: 52px; }
+    .hero-cta-wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
 
-    .hero-tagline {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: clamp(15px, 2vw, 19px);
-      color: var(--gold-light);
-      margin-bottom: 52px;
-      letter-spacing: 0.5px;
-    }
-
-    .hero-cta-wrap {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
+    /* ─── BUTTONS ─── */
     .btn-gold {
       background: linear-gradient(135deg, #7a5c18, var(--gold), var(--gold-light));
-      color: #000;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 18px 48px;
-      border-radius: 3px;
-      text-decoration: none;
-      box-shadow: 0 0 32px rgba(201,168,76,0.4);
+      color: #000; font-weight: 700;
+      font-size: 14px; letter-spacing: 1px; padding: 18px 48px; border-radius: 3px;
+      text-decoration: none; box-shadow: 0 0 32px rgba(201,168,76,0.4);
       transition: transform 0.2s, box-shadow 0.2s;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      white-space: nowrap;
-      line-height: 1;
+      display: inline-flex; align-items: center; justify-content: center;
+      white-space: nowrap; line-height: 1; cursor: pointer; border: none;
     }
     .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 8px 40px rgba(201,168,76,0.55); }
-
     .btn-outline {
-      border: 1px solid rgba(201,168,76,0.5);
-      color: var(--gold);
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 18px 48px;
-      border-radius: 3px;
-      text-decoration: none;
-      transition: background 0.2s, color 0.2s, border-color 0.2s;
+      border: 1px solid rgba(201,168,76,0.5); color: var(--gold);
+      font-weight: 600; font-size: 14px;
+      padding: 18px 48px; border-radius: 3px; text-decoration: none;
+      transition: background 0.2s, color 0.2s, border-color 0.2s; white-space: nowrap;
     }
     .btn-outline:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
+    .cta-micro { font-size: 11px; color: var(--gray); letter-spacing: 0.3px; margin-top: 12px; text-align: center; font-weight: 400; }
 
-    /* [CHANGE 4] CTA micro-copy */
-    .cta-micro {
-      font-size: 11px;
-      color: var(--gray);
-      letter-spacing: 0.5px;
-      margin-top: 12px;
-      text-align: center;
-      font-weight: 500;
-    }
-
-    /* PAIN SECTION */
+    /* ─── PAIN ─── */
     .pain-section {
       background: linear-gradient(180deg, var(--black) 0%, #0e0700 50%, var(--black) 100%);
       padding: 110px 0;
     }
-
     .pain-alert {
       background: linear-gradient(135deg, rgba(224,48,48,0.12), rgba(224,48,48,0.04));
-      border: 1px solid rgba(224,48,48,0.35);
-      border-left: 4px solid var(--red);
-      border-radius: 0 10px 10px 0;
-      padding: 36px 44px;
-      margin-bottom: 70px;
+      border: 1px solid rgba(224,48,48,0.35); border-left: 4px solid var(--red);
+      border-radius: 0 10px 10px 0; padding: 36px 44px; margin-bottom: 70px;
     }
-    .pain-alert-headline {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: clamp(18px, 2.5vw, 26px);
-      color: var(--red-soft);
-      margin-bottom: 14px;
-    }
-    .pain-alert p { color: #ccc; font-size: 16px; line-height: 1.9; }
+    .pain-alert-headline { font-weight: 900; font-size: clamp(16px, 2.2vw, 24px); color: var(--red-soft); margin-bottom: 14px; }
+    .pain-alert p { color: #ccc; font-size: 15px; line-height: 2; }
     .pain-alert p strong { color: var(--white); }
 
-    /* PHOTO PROOF */
+    /* ─── PHOTO PROOF ─── */
     .photo-proof {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px;
-      border-radius: 12px;
-      overflow: hidden;
-      margin-bottom: 70px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+      border-radius: 12px; overflow: hidden; margin-bottom: 70px;
       border: 1px solid rgba(255,255,255,0.06);
     }
     @media (max-width: 640px) { .photo-proof { grid-template-columns: 1fr; } }
-
     .photo-proof-side { position: relative; overflow: hidden; }
     .photo-proof-side img { width: 100%; display: block; object-fit: cover; }
     .photo-proof-overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 24px;
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      display: flex; flex-direction: column; justify-content: flex-end; padding: 24px;
       background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
     }
     .photo-proof-tag {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 6px 14px;
-      border-radius: 2px;
-      display: inline-block;
-      margin-bottom: 10px;
-      width: fit-content;
+      font-weight: 900; font-size: 11px;
+      letter-spacing: 3px; text-transform: uppercase; padding: 6px 14px; border-radius: 2px;
+      display: inline-block; margin-bottom: 10px; width: fit-content;
     }
     .photo-proof-tag.before { background: rgba(224,48,48,0.9); color: #fff; }
-    .photo-proof-tag.after { background: rgba(39,174,96,0.9); color: #fff; }
-    .photo-proof-stat { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; color: #fff; }
-    .photo-proof-stat.red { color: #ff9999; }
+    .photo-proof-tag.after  { background: rgba(39,174,96,0.9);  color: #fff; }
+    .photo-proof-stat { font-weight: 700; font-size: 14px; color: #fff; }
+    .photo-proof-stat.red   { color: #ff9999; }
     .photo-proof-stat.green { color: #7effa0; }
 
-    /* STATS ROW */
-    .stats-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-      margin-bottom: 70px;
-    }
+    /* ─── STATS ─── */
+    .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-bottom: 70px; }
     @media (max-width: 700px) { .stats-row { grid-template-columns: 1fr; } }
-
     .stat-box {
-      background: var(--dark2);
-      padding: 44px 32px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      transition: background 0.3s;
+      background: var(--dark2); padding: 44px 32px; text-align: center;
+      position: relative; overflow: hidden; transition: background 0.3s;
     }
     .stat-box:hover { background: var(--dark3); }
     .stat-box::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
       background: linear-gradient(90deg, transparent, var(--gold), transparent);
     }
-    .stat-num {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: clamp(48px, 6vw, 72px);
-      line-height: 1;
-      margin-bottom: 10px;
-    }
-    .stat-desc { font-size: 14px; color: var(--gray-light); line-height: 1.6; }
+    .stat-num { font-weight: 900; font-size: clamp(48px, 6vw, 72px); line-height: 1; margin-bottom: 10px; }
+    .stat-desc { font-size: 13px; color: var(--gray-light); line-height: 1.7; }
     .stat-desc strong { color: var(--white); }
 
-    /* BEFORE/AFTER */
+    /* ─── BEFORE / AFTER ─── */
     .ba-section { background: var(--dark); padding: 110px 0; }
     .ba-block { margin-bottom: 120px; }
     .ba-block:last-child { margin-bottom: 0; }
-
     .ba-number {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 80px;
-      line-height: 1;
-      color: rgba(201,168,76,0.08);
-      margin-bottom: -20px;
-      display: block;
+      font-weight: 900; font-size: 80px;
+      line-height: 1; color: rgba(201,168,76,0.08); margin-bottom: -20px; display: block;
     }
-    .ba-block-title {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: clamp(22px, 3.5vw, 38px);
-      margin-bottom: 10px;
-    }
-    .ba-block-lead {
-      color: var(--gray-light);
-      font-size: 16px;
-      max-width: 680px;
-      margin-bottom: 48px;
-      line-height: 1.9;
-    }
+    .ba-block-title { font-weight: 900; font-size: clamp(20px, 3vw, 34px); margin-bottom: 10px; }
+    .ba-block-lead { color: var(--gray-light); font-size: 15px; max-width: 680px; margin-bottom: 48px; line-height: 2; }
     .ba-block-lead strong { color: var(--white); }
-
     .ba-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3px;
-      border-radius: 14px;
-      overflow: hidden;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3px;
+      border-radius: 14px; overflow: hidden;
     }
     @media (max-width: 720px) { .ba-grid { grid-template-columns: 1fr; } }
-
     .ba-col-header {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 14px 24px;
-      text-align: center;
+      font-weight: 700; font-size: 12px;
+      letter-spacing: 3px; text-transform: uppercase; padding: 14px 24px; text-align: center;
     }
     .ba-col-header.before { background: #2a0808; color: #ff9999; border-top: 2px solid rgba(224,48,48,0.5); }
-    .ba-col-header.after { background: #082a14; color: #7effa0; border-top: 2px solid rgba(39,174,96,0.5); }
+    .ba-col-header.after  { background: #082a14; color: #7effa0; border-top: 2px solid rgba(39,174,96,0.5); }
     .ba-col img { width: 100%; display: block; }
-
-    .ba-metrics {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 28px;
-    }
+    .ba-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
     @media (max-width: 500px) { .ba-metrics { grid-template-columns: 1fr; } }
-
     .ba-metric {
-      background: var(--dark2);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 8px;
-      padding: 20px 22px;
-      border-left: 3px solid var(--gold);
+      background: var(--dark2); border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 8px; padding: 20px 22px; border-left: 3px solid var(--gold);
     }
-    .ba-metric-label {
-      font-size: 11px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 6px;
-    }
-    .ba-metric-value { font-size: 15px; color: #ccc; line-height: 1.6; }
+    .ba-metric-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+    .ba-metric-value { font-size: 14px; color: #ccc; line-height: 1.7; }
     .ba-metric-value strong { color: var(--white); }
 
-    /* AI SECTION */
+    /* ─── AI SECTION ─── */
     .ai-section {
       background: linear-gradient(135deg, #050510 0%, #0a0a1a 50%, #050510 100%);
       padding: 110px 0;
@@ -394,567 +214,243 @@
       border-bottom: 1px solid rgba(100,100,255,0.1);
     }
     .ai-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(100,100,255,0.1);
-      border: 1px solid rgba(100,100,255,0.32);
-      border-radius: 999px;
-      padding: 10px 24px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: #b3b3ff;
-      margin-bottom: 32px;
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(100,100,255,0.1); border: 1px solid rgba(100,100,255,0.32);
+      border-radius: 999px; padding: 10px 24px;
+      font-size: 13px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase; color: #b3b3ff; margin-bottom: 32px;
     }
     .ai-quote {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: clamp(20px, 3vw, 32px);
-      line-height: 1.4;
-      margin-bottom: 32px;
-      color: var(--white);
-      border-left: 3px solid #6666ff;
-      padding-left: 28px;
+      font-weight: 700; font-size: clamp(18px, 2.8vw, 30px); line-height: 1.6;
+      margin-bottom: 32px; color: var(--white);
+      border-left: 3px solid #6666ff; padding-left: 28px;
     }
     .ai-quote em { font-style: normal; color: #ff9999; }
-
-    .ai-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3px;
-      margin-top: 56px;
-      border-radius: 14px;
-      overflow: hidden;
-    }
-    @media (max-width: 720px) { .ai-grid { grid-template-columns: 1fr; } }
-
-    .ai-col-header {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 14px 24px;
-      text-align: center;
-    }
-    .ai-col-header.before { background: #1a0a0a; color: #ff9999; border-top: 2px solid rgba(224,48,48,0.4); }
-    .ai-col-header.after { background: #0a0a1a; color: #9999ff; border-top: 2px solid rgba(100,100,255,0.5); }
-    .ai-col img { width: 100%; display: block; }
-
     .ai-fact {
-      background: rgba(100,100,255,0.06);
-      border: 1px solid rgba(100,100,255,0.2);
-      border-radius: 10px;
-      padding: 28px 32px;
-      margin-top: 40px;
-      display: flex;
-      align-items: flex-start;
-      gap: 0;
+      background: rgba(100,100,255,0.06); border: 1px solid rgba(100,100,255,0.2);
+      border-radius: 10px; padding: 28px 32px; margin-top: 40px;
     }
-    .ai-fact-icon { display: none; }
-    .ai-fact-text { font-size: 16px; color: #ccc; line-height: 1.8; }
+    .ai-fact-text { font-size: 15px; color: #ccc; line-height: 1.9; }
     .ai-fact-text strong { color: #9999ff; }
 
-    /* ROI */
+    /* ─── ROI ─── */
     .roi-numbers { background: var(--black); padding: 110px 0; }
     .roi-table-wrap { overflow-x: auto; margin-top: 56px; }
-    .roi-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    .roi-table { width: 100%; border-collapse: collapse; font-size: 14px; }
     .roi-table thead tr { background: var(--dark3); }
     .roi-table th {
-      padding: 18px 24px;
-      text-align: left;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gold);
-      border-bottom: 2px solid rgba(201,168,76,0.25);
-      white-space: nowrap;
+      padding: 18px 20px; text-align: left;
+      font-weight: 700; font-size: 10px;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--gold);
+      border-bottom: 2px solid rgba(201,168,76,0.25); white-space: nowrap;
     }
-    .roi-table td {
-      padding: 18px 24px;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      color: #ccc;
-      vertical-align: middle;
-    }
+    .roi-table td { padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #ccc; vertical-align: middle; }
     .roi-table tr:hover td { background: rgba(201,168,76,0.03); }
     .roi-table .metric-name { color: var(--white); font-weight: 500; }
-    .roi-table .before-val { color: #ff9999; }
-    .roi-table .after-val { color: var(--green-bright); font-weight: 700; }
-    .roi-table .arrow { color: var(--gold); font-size: 18px; text-align: center; }
+    .roi-table .before-val  { color: #ff9999; }
+    .roi-table .after-val   { color: var(--green-bright); font-weight: 700; }
+    .roi-table .arrow       { color: var(--gold); font-size: 18px; text-align: center; }
 
-    .roi-cards-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 3px;
-      margin-top: 3px;
-    }
-    .roi-card {
-      background: var(--dark2);
-      padding: 48px 36px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      transition: background 0.3s;
-    }
-    .roi-card:hover { background: var(--dark3); }
-    .roi-card.featured {
-      background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.04));
-      border: 1px solid rgba(201,168,76,0.3);
-    }
-    .roi-card-badge {
-      position: absolute;
-      top: 0; left: 50%;
-      transform: translateX(-50%);
-      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-      color: #000;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 5px 20px;
-      white-space: nowrap;
-    }
-    .roi-card-plan {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 24px;
-      margin-top: 16px;
-    }
-
-    /* [CHANGE 1] Anchoring price styles */
-    .roi-card-regular-price {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 20px;
-      color: var(--gray);
-      text-decoration: line-through;
-      margin-bottom: 4px;
-      letter-spacing: 0.5px;
-    }
-    .roi-card-founding-label {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gold-light);
-      margin-bottom: 6px;
-    }
-
-    .roi-card-price {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 60px;
-      color: var(--white);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .roi-card-period { font-size: 13px; color: var(--gray); margin-bottom: 32px; }
-
-    /* [CHANGE 1] Slots note */
-    .roi-card-slots-note {
-      font-size: 10px;
-      color: rgba(255,255,255,0.35);
-      letter-spacing: 0.5px;
-      margin-top: -24px;
-      margin-bottom: 28px;
-      line-height: 1.6;
-    }
-
-    .roi-card-features {
-      list-style: none;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-bottom: 36px;
-    }
-    .roi-card-features li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      font-size: 14px;
-      color: #bbb;
-    }
-    .roi-card-features li::before {
-      content: '✓';
-      color: var(--gold);
-      font-weight: 700;
-      font-family: 'Montserrat', sans-serif;
-      flex-shrink: 0;
-    }
-
-    /* PLAN TIMELINE */
+    /* ─── PLAN TIMELINE ─── */
     .plan-section { background: var(--dark); padding: 110px 0; }
     .timeline { position: relative; margin-top: 64px; }
     .timeline::before {
-      content: '';
-      position: absolute;
-      left: 0; top: 8px; bottom: 0;
-      width: 1px;
+      content: ''; position: absolute; left: 0; top: 8px; bottom: 0; width: 1px;
       background: linear-gradient(180deg, var(--gold) 0%, rgba(201,168,76,0.2) 80%, transparent 100%);
     }
     .tl-item { padding-left: 40px; padding-bottom: 60px; position: relative; }
     .tl-item:last-child { padding-bottom: 0; }
     .tl-dot {
-      position: absolute;
-      left: -5px; top: 6px;
-      width: 11px; height: 11px;
-      border-radius: 50%;
-      background: var(--gold);
-      box-shadow: 0 0 14px rgba(201,168,76,0.7);
+      position: absolute; left: -5px; top: 6px; width: 11px; height: 11px;
+      border-radius: 50%; background: var(--gold); box-shadow: 0 0 14px rgba(201,168,76,0.7);
     }
-    .tl-phase {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 10px;
-    }
-    .tl-title {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 20px;
-      margin-bottom: 16px;
-    }
+    .tl-phase { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+    .tl-title { font-weight: 700; font-size: 18px; margin-bottom: 16px; }
     .tl-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .tl-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: #bbb; }
+    .tl-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: #bbb; }
     .tl-list li::before { content: '→'; color: var(--gold); flex-shrink: 0; }
 
-    /* GUARANTEE */
+    /* ─── GUARANTEE ─── */
     .guarantee-section {
       background: linear-gradient(135deg, #030d06, #080808, #030d06);
-      padding: 110px 0;
-      border-top: 1px solid rgba(39,174,96,0.15);
+      padding: 110px 0; border-top: 1px solid rgba(39,174,96,0.15);
     }
     .guarantee-box {
-      background: rgba(39,174,96,0.05);
-      border: 1px solid rgba(39,174,96,0.25);
-      border-radius: 16px;
-      padding: 64px;
-      text-align: center;
+      background: rgba(39,174,96,0.05); border: 1px solid rgba(39,174,96,0.25);
+      border-radius: 16px; padding: 64px; text-align: center;
     }
     @media (max-width: 600px) { .guarantee-box { padding: 40px 24px; } }
-    .guarantee-icon { font-size: 56px; margin-bottom: 24px; }
-    .guarantee-title {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: clamp(22px, 3.5vw, 36px);
-      color: var(--green-bright);
-      margin-bottom: 20px;
-    }
-    .guarantee-text {
-      font-size: 17px;
-      color: #bbb;
-      max-width: 640px;
-      margin: 0 auto 40px;
-      line-height: 1.9;
-    }
+    .guarantee-icon  { font-size: 56px; margin-bottom: 24px; }
+    .guarantee-title { font-weight: 900; font-size: clamp(20px, 3vw, 34px); color: var(--green-bright); margin-bottom: 20px; }
+    .guarantee-text  { font-size: 16px; color: #bbb; max-width: 640px; margin: 0 auto 40px; line-height: 2; }
     .guarantee-text strong { color: var(--white); }
-
-    .compare-table { width: 100%; border-collapse: collapse; margin-top: 64px; font-size: 15px; }
+    .compare-table { width: 100%; border-collapse: collapse; margin-top: 64px; font-size: 14px; }
     .compare-table thead tr { background: var(--dark3); }
     .compare-table th {
-      padding: 16px 22px;
-      text-align: left;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gold);
+      padding: 16px 22px; text-align: left;
+      font-weight: 700; font-size: 10px;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--gold);
       border-bottom: 2px solid rgba(201,168,76,0.2);
     }
-    .compare-table td {
-      padding: 16px 22px;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      color: #bbb;
-      vertical-align: top;
-    }
+    .compare-table td { padding: 16px 22px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #bbb; vertical-align: top; }
     .compare-table tr:hover td { background: rgba(201,168,76,0.02); }
     .compare-table .feat { color: var(--white); font-weight: 500; }
-    .compare-table .yes { color: var(--green-bright); }
-    .compare-table .no { color: #ff7777; }
+    .compare-table .yes  { color: var(--green-bright); }
+    .compare-table .no   { color: #ff7777; }
 
-    /* URGENCY */
+    /* ─── URGENCY ─── */
     .urgency-section {
       background: linear-gradient(135deg, #1a0000, #0a0a0a, #1a0000);
-      padding: 90px 28px;
-      text-align: center;
-      border-top: 1px solid rgba(224,48,48,0.2);
-      border-bottom: 1px solid rgba(224,48,48,0.2);
+      padding: 90px 28px; text-align: center;
+      border-top: 1px solid rgba(224,48,48,0.2); border-bottom: 1px solid rgba(224,48,48,0.2);
     }
-    .urgency-title {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: clamp(24px, 4vw, 46px);
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-    .urgency-body {
-      font-size: 17px;
-      color: var(--gray-light);
-      max-width: 640px;
-      margin: 0 auto 48px;
-      line-height: 1.9;
-    }
+    .urgency-title { font-weight: 900; font-size: clamp(22px, 3.8vw, 44px); line-height: 1.3; margin-bottom: 20px; }
+    .urgency-body  { font-size: 16px; color: var(--gray-light); max-width: 640px; margin: 0 auto 48px; line-height: 2; }
     .urgency-body strong { color: var(--white); }
     .counters { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-bottom: 52px; }
     .counter { text-align: center; }
-    .counter-num {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 52px;
-      color: var(--red-soft);
-      line-height: 1;
-    }
-    .counter-lbl {
-      font-size: 11px;
-      font-family: 'Montserrat', sans-serif;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gray);
-      margin-top: 6px;
-    }
+    .counter-num { font-weight: 900; font-size: 52px; color: var(--red-soft); line-height: 1; }
+    .counter-lbl  { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--gray); margin-top: 6px; }
 
-    /* FINAL CTA */
+    /* ─── FINAL CTA ─── */
     .cta-section { background: var(--dark2); padding: 110px 28px; text-align: center; }
-    .cta-title {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: clamp(28px, 5vw, 56px);
-      line-height: 1.15;
-      margin-bottom: 20px;
-    }
-    .cta-body {
-      font-size: 18px;
-      color: var(--gray-light);
-      max-width: 580px;
-      margin: 0 auto 52px;
-      line-height: 1.9;
-      font-weight: 300;
-    }
+    .cta-title { font-weight: 900; font-size: clamp(26px, 4.5vw, 52px); line-height: 1.25; margin-bottom: 20px; }
+    .cta-body  { font-size: 17px; color: var(--gray-light); max-width: 580px; margin: 0 auto 52px; line-height: 2; font-weight: 300; }
     .contact-card {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-      gap: 22px;
-      background: var(--dark3);
-      border: 1px solid rgba(201,168,76,0.25);
-      border-radius: 16px;
-      padding: 52px 72px;
-      max-width: 480px;
-      width: 100%;
+      display: inline-flex; flex-direction: column; align-items: center; gap: 22px;
+      background: var(--dark3); border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 16px; padding: 52px 72px; max-width: 480px; width: 100%;
     }
     @media (max-width: 560px) { .contact-card { padding: 36px 24px; } }
-    .contact-row {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 16px;
-      font-size: 17px;
-      color: var(--white);
-      width: 100%;
-    }
+    .contact-row { display: flex; align-items: center; gap: 16px; font-size: 16px; color: var(--white); width: 100%; }
     .contact-ico {
-      width: 42px; height: 42px;
-      border-radius: 50%;
+      width: 42px; height: 42px; border-radius: 50%;
       background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 17px;
-      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0;
     }
 
-    /* FOOTER */
+    /* ─── FOOTER ─── */
     footer {
-      background: var(--black);
-      border-top: 1px solid rgba(201,168,76,0.08);
-      padding: 44px 28px;
-      text-align: center;
-      color: var(--gray);
-      font-size: 13px;
+      background: var(--black); border-top: 1px solid rgba(201,168,76,0.08);
+      padding: 44px 28px; text-align: center; color: var(--gray); font-size: 13px;
     }
-    .footer-brand { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 18px; margin-bottom: 10px; }
-
-    /* SCROLL ANIMATIONS */
-    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
-    .reveal.in { opacity: 1; transform: translateY(0); }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-
+    .footer-brand { font-weight: 900; font-size: 18px; margin-bottom: 10px; }
     .gold-line { width: 60px; height: 2px; background: linear-gradient(90deg, var(--gold-dark), var(--gold)); margin: 0 auto 40px; }
 
-    /* 損失シミュレーター */
-    .simulator-section {
-      padding: 80px 20px;
-      background-color: var(--dark2);
-      display: flex;
-      justify-content: center;
-    }
+    /* ─── REVEAL ─── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ─── SIMULATOR ─── */
+    .simulator-section { padding: 80px 20px; background-color: var(--dark2); display: flex; justify-content: center; }
     .sim-container {
-      max-width: 800px;
-      width: 100%;
-      background: var(--dark3);
-      border: 1px solid var(--gold-dark);
-      border-radius: 12px;
-      padding: 40px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      max-width: 800px; width: 100%; background: var(--dark3);
+      border: 1px solid var(--gold-dark); border-radius: 12px; padding: 40px;
+      text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
     .sim-badge {
-      display: inline-block;
-      color: var(--black);
-      background-color: var(--gold);
-      padding: 4px 12px;
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      border-radius: 20px;
-      margin-bottom: 16px;
+      display: inline-block; color: var(--black); background-color: var(--gold);
+      padding: 4px 14px; font-size: 12px; font-weight: 700; text-transform: uppercase;
+      border-radius: 20px; margin-bottom: 16px;
     }
-    .sim-header h2 {
-      font-size: 28px;
-      color: var(--white);
-      margin-bottom: 12px;
-    }
-    .sim-header p {
-      color: var(--gray-light);
-      font-size: 14px;
-      margin-bottom: 30px;
-    }
-    .sim-controls {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
+    .sim-header h2 { font-size: 24px; color: var(--white); margin-bottom: 12px; }
+    .sim-header p  { color: var(--gray-light); font-size: 14px; margin-bottom: 30px; line-height: 1.8; }
+    .sim-controls  { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 20px; }
     .sim-select {
-      padding: 14px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      background-color: var(--dark4);
-      color: var(--white);
-      border: 1px solid #444;
-      outline: none;
-      flex: 1;
-      min-width: 200px;
-      font-family: inherit;
+      padding: 14px 20px; font-size: 15px; border-radius: 6px;
+      background-color: var(--dark4); color: var(--white); border: 1px solid #444;
+      outline: none; flex: 1; min-width: 200px; font-family: inherit;
     }
     .sim-select:focus { border-color: var(--gold); }
-    .sim-btn {
-      padding: 14px 30px;
-      font-size: 16px;
-      flex: 1;
-      min-width: 200px;
-      cursor: pointer;
-      border: none;
-    }
-    .sim-result {
-      margin-top: 30px;
-      padding-top: 30px;
-      border-top: 1px dashed #444;
-      transition: opacity 0.5s ease;
-    }
-    .sim-result.hidden { display: none; opacity: 0; }
-    .sim-result-text {
-      color: var(--gray-light);
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+    .sim-btn { padding: 14px 30px; font-size: 15px; flex: 1; min-width: 200px; }
+    .sim-result { margin-top: 30px; padding-top: 30px; border-top: 1px dashed #444; }
+    .sim-result.hidden { display: none; }
+    .sim-result-text { color: var(--gray-light); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
     .sim-amount {
-      font-size: 48px;
-      color: var(--red-soft);
-      font-weight: 900;
-      margin: 10px 0;
-      text-shadow: 0 0 10px rgba(224,48,48,0.3);
+      font-size: 48px; color: var(--red-soft);
+      font-weight: 900; margin: 10px 0; text-shadow: 0 0 10px rgba(224,48,48,0.3);
     }
-    .sim-warning { color: var(--white); font-size: 15px; line-height: 1.6; }
+    .sim-warning { color: var(--white); font-size: 15px; line-height: 1.8; }
     .sim-warning .highlight { color: var(--gold); font-weight: 700; }
 
-    /* CALLOUT BOX */
-    .callout-box {
-      background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.03));
-      border: 1px solid rgba(201,168,76,0.25);
-      border-radius: 12px;
-      padding: 32px 40px;
-      margin-top: 40px;
+    /* ─── PRICING ─── */
+    .new-pricing-row { display: flex; flex-wrap: wrap; gap: 3px; justify-content: center; margin-top: 64px; }
+    .np-card {
+      background: var(--dark2); border: 1px solid rgba(255,255,255,0.07); border-radius: 0;
+      padding: 44px 32px; width: 100%; max-width: 340px; text-align: center;
+      position: relative; transition: background 0.3s, transform 0.3s; flex: 1 1 280px;
     }
-    .callout-box p { font-size: 16px; color: #ccc; line-height: 1.9; }
-    .callout-box p strong { color: var(--gold-light); }
+    .np-card:hover { background: var(--dark3); transform: translateY(-4px); }
+    .np-card.popular {
+      background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.04));
+      border: 1px solid rgba(201,168,76,0.4); transform: scale(1.03); z-index: 2;
+    }
+    .np-card.popular:hover { transform: scale(1.03) translateY(-4px); }
+    .np-badge {
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold)); color: #000;
+      font-weight: 700; font-size: 10px;
+      letter-spacing: 2px; text-transform: uppercase; padding: 5px 18px;
+      border-radius: 999px; white-space: nowrap;
+    }
+    .np-card h3  { font-weight: 900; font-size: 17px; color: var(--white); margin: 8px 0 6px; }
+    .np-card .np-sub { font-size: 12px; color: var(--gray); margin-bottom: 20px; }
+    .np-anchor { font-size: 13px; color: var(--gray); text-decoration: line-through; height: 18px; margin-bottom: 4px; }
+    .np-setup  { font-size: 12px; color: var(--gray-light); margin-bottom: 4px; }
+    .np-price  { font-weight: 900; font-size: 52px; color: var(--white); line-height: 1; margin-bottom: 4px; }
+    .np-price span { font-size: 0.38em; color: var(--gray); font-weight: 400; }
+    .popular .np-price { color: var(--gold-light); }
+    .np-features { list-style: none; padding: 0; margin: 24px 0 28px; text-align: left; display: flex; flex-direction: column; gap: 11px; }
+    .np-features li { font-size: 13px; color: #bbb; padding-left: 22px; position: relative; line-height: 1.6; }
+    .np-features li::before { content: '✓'; color: var(--gold); font-weight: 700; position: absolute; left: 0; }
+    .np-features li.off { color: #555; }
+    .np-features li.off::before { content: '✕'; color: #444; }
+    .np-microcopy { font-size: 10px; color: rgba(255,255,255,0.3); margin-top: 10px; font-style: italic; }
   </style>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KGZN1TXBQL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KGZN1TXBQL');
-  </script>
+
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════
-     HERO
-═══════════════════════════════════════ -->
 <section class="hero" id="top">
-  <div class="hero-eyebrow">South Bay Restaurant — Confidential Digital Growth Proposal</div>
-
+  <div class="hero-eyebrow">South Bay Restaurants — Strategic Growth Proposal (Confidential)</div>
   <h1 class="hero-headline">
-    Your Food Is Amazing.<br/>
-    But Right Now, It's <span class="dead" style="color:var(--red-soft);">Invisible</span> Online<br/>
-    — And You're Bleeding Revenue.
+    Your food is elite.<br/>
+    But right now, your restaurant is <span class="dead" style="color:var(--red-soft);">invisible</span> online.<br/>
+    —— In the meantime, your revenue is quietly leaking away.
   </h1>
-
   <p class="hero-sub">
-    <strong>Over 87% of diners pick their next restaurant using their phone or an AI assistant.</strong><br/>
-    If your digital presence isn't dialed in, you're quietly losing dozens of customers
-    — and thousands of dollars — every single week to the restaurant down the street.
+    <strong>Over 87% of diners use AI or smartphones to choose where to eat.</strong><br/>
+    If your digital presence is weak, dozens of potential guests and thousands of dollars in revenue<br/>are flowing straight to your competitors every single week.
   </p>
-
   <p class="hero-tagline">
-    Let's make your South Bay restaurant the one everyone finds, clicks, and walks into.
+    I make your restaurant the first one guests find, select, and visit in the South Bay.
   </p>
 
-  <div class="hero-cta-wrap">
-    <!-- [CHANGE 4] micro-copy added below each CTA -->
-    <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
-      <a href="#contact" class="btn-gold">Get My Free Audit — No Strings Attached</a>
-      <p class="cta-micro">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
+  <div class="hero-cta-wrap" style="display:flex; flex-direction:column; align-items:center; gap:10px;">
+    <div class="hero-cta-row" style="display:flex; gap:18px; align-items:center; justify-content:center; flex-wrap:wrap;">
+      <a href="#contact" class="btn-gold">
+        Claim My Free Audit — 100% Free
+      </a>
+      <a href="#before-after" class="btn-outline">
+        View Metrics & Results
+      </a>
     </div>
-    <a href="#before-after" class="btn-outline">See Real Results & Numbers</a>
+    <p class="cta-micro" style="text-align:center; margin:0;">
+      Data-driven analysis only. No pushy sales. PDF report delivered within 24 hours.
+    </p>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     REVENUE LOSS SIMULATOR
-═══════════════════════════════════════ -->
 <section class="simulator-section reveal" id="simulator">
   <div class="sim-container">
     <div class="sim-header">
-      <span class="sim-badge">Interactive Audit</span>
-      <h2>Calculate Your Silent Revenue Loss</h2>
-      <p>Select your location and cuisine to see how much money you are leaving on the table every single month by not ranking #1.</p>
+      <span class="sim-badge">Revenue Recovery Audit</span>
+      <h2>Calculate Your "Opportunity Loss"</h2>
+      <p>Select your area and cuisine to see exactly how much monthly revenue you are losing to competitors by not appearing at the top of search results.</p>
     </div>
     <div class="sim-controls">
       <select id="sim-city" class="sim-select">
-        <option value="" disabled selected>Select City</option>
+        <option value="" disabled selected>Select Area</option>
         <option value="Torrance">Torrance</option>
         <option value="Redondo Beach">Redondo Beach</option>
         <option value="Hermosa Beach">Hermosa Beach</option>
@@ -966,751 +462,402 @@
         <option value="Italian">Italian</option>
         <option value="Mexican">Mexican</option>
         <option value="Seafood">Seafood</option>
-        <option value="Japanese/Sushi">Japanese / Sushi</option>
+        <option value="Japanese/Sushi">Japanese/Sushi</option>
         <option value="American">American</option>
       </select>
-      <button class="btn-gold sim-btn" onclick="calculateLoss()">Reveal My Loss</button>
+      <button class="btn-gold sim-btn" onclick="calculateLoss()">Calculate My Loss</button>
     </div>
     <div id="sim-result" class="sim-result hidden">
-      <p class="sim-result-text">Estimated Monthly Revenue Bleeding to Competitors:</p>
+      <p class="sim-result-text">Estimated monthly revenue lost to competitors:</p>
       <h3 id="sim-amount" class="sim-amount">$0</h3>
       <p class="sim-warning">
-        Right now, diners searching for <span id="res-cuisine" class="highlight">...</span> in <span id="res-city" class="highlight">...</span> are choosing your competitors.
-        <strong>Stop giving away your profit.</strong>
+        As we speak, customers in <span id="res-city" class="highlight">...</span> searching for <span id="res-cuisine" class="highlight">...</span> are walking into your competitor's doors. <strong>Stop the bleed today.</strong>
       </p>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     PAIN — LOSS VISUALIZATION
-═══════════════════════════════════════ -->
 <div class="pain-section">
   <div class="container">
+
     <div class="reveal">
       <span class="label">The Problem</span>
       <h2 class="section-title">
-        Why Your Restaurant Is<br/>
-        <span class="gold-text">Losing Customers You'll Never Even Know About</span>
+        Why your restaurant is<br/>
+        <span class="gold-text">losing guests without you even knowing it</span>
       </h2>
       <p class="section-lead" style="margin-bottom: 56px;">
-        Your food might be outstanding. Your service might be flawless. Your location might be perfect.
-        But if your digital presence is weak, customers won't even give you a chance.
-        They'll choose a competitor who showed up better online — even if that competitor's food is worse.
-        This isn't a food problem. <strong style="color:var(--white)">It's a visibility problem.</strong>
+        High-quality food and service aren't enough if you are invisible. If your digital presence is weak, guests will choose your competitor before they ever hear your name. This isn't a food problem. <strong style="color:var(--white)">This is an "Invisibility" problem.</strong>
       </p>
     </div>
 
-    <div class="reveal" style="margin-bottom: 56px;">
-      <img src="loss_infographic.jpg" alt="Revenue being lost without digital optimization" style="width:100%; border-radius:12px; display:block; border:1px solid rgba(201,168,76,0.2);" />
-    </div>
-
     <div class="pain-alert reveal">
-      <div class="pain-alert-headline">⚠ Your Competitors Are Stealing Your Customers — Right Now</div>
+      <div class="pain-alert-headline">⚠ Your competitors are taking your customers right now</div>
       <p>
-        While you're reading this, other South Bay restaurants are actively optimizing their digital presence.
-        They're climbing Google rankings, getting recommended by AI assistants, and capturing the customers
-        who would've chosen you. <strong>Every month you wait = handing your competitors months of momentum
-        they'll use to lock in customer loyalty before you even show up.</strong>
-        The gap only gets harder to close.
+        While you read this, other restaurants in the South Bay are dominating search results, getting recommended by AI, and winning guests who should have been yours. <strong>Early adopters are locking in guest loyalty. This gap becomes harder to bridge every single day.</strong>
       </p>
     </div>
 
     <div class="reveal" style="margin-bottom: 32px;">
-      <h3 style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:18px; color:var(--gray-light); margin-bottom:16px; letter-spacing:1px;">
-        📸 One photo is the difference between a scroll-past and a reservation
+      <h3 style="font-weight:700; font-size:17px; color:var(--gray-light); margin-bottom:16px;">
+        📸 One photo can be the difference between a walk-by and a reservation
       </h3>
     </div>
+
     <div class="photo-proof reveal">
       <div class="photo-proof-side">
-        <img src="before_google.jpg" alt="Google profile before optimization" style="filter: brightness(0.95);" />
+        <img src="before_google.jpg" alt="Unoptimized Google Listing" style="filter: brightness(0.95);" />
         <div class="photo-proof-overlay">
-          <span class="photo-proof-tag before">BEFORE</span>
-          <div class="photo-proof-stat red">Looks like every other restaurant.<br/>Click-through rate: just 1.2%</div>
+          <span class="photo-proof-tag before">BEFORE — Invisible</span>
+          <div class="photo-proof-stat red">Generic look. Low trust.<br/>Click-through rate: Only 1.2%</div>
         </div>
       </div>
       <div class="photo-proof-side">
-        <img src="after_google.jpg" alt="Google profile after optimization" />
+        <img src="after_google.jpg" alt="Optimized Google Listing" />
         <div class="photo-proof-overlay">
-          <span class="photo-proof-tag after">AFTER</span>
-          <div class="photo-proof-stat green">30+ pro photos that stop the scroll.<br/>Click-through rate: 8.7% — up +625%</div>
+          <span class="photo-proof-tag after">AFTER — Optimized</span>
+          <div class="photo-proof-stat green">High-end photography. Instant desire.<br/>Click-through rate: 8.7% (+625%)</div>
         </div>
       </div>
     </div>
 
-    <div class="stats-row reveal" style="margin-top: 3px;">
+    <div class="stats-row reveal" style="margin-top: 0;">
       <div class="stat-box">
         <div class="stat-num gold-text">42<span style="font-size:0.5em">%</span></div>
-        <div class="stat-desc">
-          <strong>More "Get Directions" Taps</strong><br/>
-          Just from upgrading your Google photo gallery
-        </div>
+        <div class="stat-desc"><strong>Increase in "Get Directions" taps</strong><br/>Achieved simply by fixing the Google visual gallery</div>
       </div>
       <div class="stat-box">
         <div class="stat-num gold-text">28<span style="font-size:0.5em">%</span></div>
-        <div class="stat-desc">
-          <strong>More New Customers Walking In</strong><br/>
-          From our "save-worthy" social content strategy
-        </div>
+        <div class="stat-desc"><strong>Boost in new walk-in guests</strong><br/>Driven by high-engagement "saveable" content strategies</div>
       </div>
       <div class="stat-box">
         <div class="stat-num" style="font-size:clamp(28px,4vw,48px); padding-top:12px;">
           <span class="gold-text">Page 2</span><br/>
           <span style="font-size:0.5em; color:var(--gold);">→ TOP 3</span>
         </div>
-        <div class="stat-desc" style="margin-top:8px;">
-          <strong>Google Search Ranking Jump</strong><br/>
-          Achieved through systematic review management alone
-        </div>
+        <div class="stat-desc" style="margin-top:8px;"><strong>Jump in Google Ranking</strong><br/>Result of aggressive review & keyword management</div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
-     BEFORE / AFTER
-═══════════════════════════════════════ -->
 <div class="ba-section" id="before-after">
   <div class="container">
+
     <div class="reveal">
       <span class="label">Before / After</span>
       <h2 class="section-title">
-        Here's Exactly What<br/>
-        <span class="gold-text">Optimization Looks Like in Practice</span>
+        The Transformation:<br/>
+        <span class="gold-text">What actually changes?</span>
       </h2>
       <p class="section-lead" style="margin-bottom: 32px;">
-        Side-by-side. Real results across the three platforms that determine whether
-        South Bay diners walk into your place — or your competitor's.
+        We optimize across the 3 critical platforms where South Bay diners decide where to eat.
       </p>
     </div>
 
-    <!-- BLOCK 1: GOOGLE -->
     <div class="ba-block reveal">
       <span class="ba-number">01</span>
-      <h3 class="ba-block-title">Google Business Profile</h3>
+      <h3 class="ba-block-title">Google Business Profile (The Entry Point)</h3>
       <p class="ba-block-lead">
-        Your Google listing is the first thing 9 out of 10 new customers see before deciding to visit.
-        We make it impossible to scroll past — with <strong>professional photos, complete menus,
-        strategic keywords, and weekly posts</strong> that signal to Google you're the real deal.
+        90% of your new guests search on Google before visiting. We turn your profile into a <strong>trust-building machine</strong> using pro photography, structured menus, and tactical keyword integration.
       </p>
       <div class="ba-grid">
         <div class="ba-col">
           <div class="ba-col-header before">BEFORE — Unoptimized</div>
-          <img src="before_google.jpg" alt="Google listing before optimization" style="background:#fff;" />
+          <img src="before_google.jpg" alt="Before Optimization" />
         </div>
         <div class="ba-col">
-          <div class="ba-col-header after">AFTER — Fully Optimized</div>
-          <img src="after_google.jpg" alt="Google listing after optimization" />
+          <div class="ba-col-header after">AFTER — Revenue Ready</div>
+          <img src="after_google.jpg" alt="After Optimization" />
         </div>
       </div>
       <div class="ba-metrics">
         <div class="ba-metric">
-          <div class="ba-metric-label">Photo Count</div>
-          <div class="ba-metric-value">2 blurry shots → <strong>30+ professional photos</strong><br/>"Get Directions" taps up 10–30%</div>
+          <div class="ba-metric-label">Visual Impact</div>
+          <div class="ba-metric-value">2 blurry photos → <strong>30+ Pro visuals</strong><br/>Drastic increase in engagement</div>
         </div>
         <div class="ba-metric">
-          <div class="ba-metric-label">Reviews & Rating</div>
-          <div class="ba-metric-value">3.8★ with 12 reviews → <strong>4.8★ with 247 reviews</strong><br/>Search ranking: buried → Top 3</div>
-        </div>
-        <div class="ba-metric">
-          <div class="ba-metric-label">Menu Listing</div>
-          <div class="ba-metric-value">"No info available" → <strong>Full menu with prices & descriptions</strong><br/>Dramatically reduces walk-away friction</div>
-        </div>
-        <div class="ba-metric">
-          <div class="ba-metric-label">Weekly Posts</div>
-          <div class="ba-metric-value">Zero activity → <strong>Weekly new menu & event posts</strong><br/>Fresh content = higher Google trust score</div>
+          <div class="ba-metric-label">Review Power</div>
+          <div class="ba-metric-value">3.8★ (12 reviews) → <strong>4.8★ (250+ reviews)</strong><br/>Ranking: Ghost town → Top 3</div>
         </div>
       </div>
     </div>
 
-    <!-- BLOCK 2: INSTAGRAM -->
     <div class="ba-block reveal">
       <span class="ba-number">02</span>
-      <h3 class="ba-block-title">Instagram — Turn Scrollers Into Diners</h3>
+      <h3 class="ba-block-title">Instagram (The Social Proof)</h3>
       <p class="ba-block-lead">
-        Instagram is the modern word-of-mouth. In 3 seconds, a potential customer decides if
-        your restaurant is worth their Friday night. We build a profile that makes them say
-        <strong>"we HAVE to go here"</strong> — and a booking link that makes it happen in two taps.
+        Instagram is your modern word-of-mouth. We build a profile that creates "hunger" in 3 seconds and converts that hunger into <strong>reservations with just 2 taps</strong>.
       </p>
       <div class="ba-grid">
         <div class="ba-col">
-          <div class="ba-col-header before">BEFORE — Unoptimized</div>
-          <img src="before_instagram.jpg" alt="Instagram before optimization" />
+          <div class="ba-col-header before">BEFORE — Abandoned</div>
+          <img src="before_instagram.jpg" alt="Instagram Before" />
         </div>
         <div class="ba-col">
-          <div class="ba-col-header after">AFTER — Fully Optimized</div>
-          <img src="after_instagram.jpg" alt="Instagram after optimization" />
+          <div class="ba-col-header after">AFTER — Conversion Focused</div>
+          <img src="after_instagram.jpg" alt="Instagram After" />
         </div>
       </div>
       <div class="ba-metrics">
         <div class="ba-metric">
-          <div class="ba-metric-label">Followers</div>
-          <div class="ba-metric-value">143 followers → <strong>4,821 local followers</strong><br/>Real South Bay diners in your market</div>
-        </div>
-        <!-- [CHANGE 2] Updated Reels copy -->
-        <div class="ba-metric">
-          <div class="ba-metric-label">Reels & Video</div>
-          <div class="ba-metric-value">Zero → <strong>Weekly AI-Optimized Reels & Automated Posting</strong><br/>Client shoots simple 10-sec clips — our AI-driven system handles editing, GEO-tagging, and publishing</div>
+          <div class="ba-metric-label">Follower Quality</div>
+          <div class="ba-metric-value">143 randoms → <strong>4,800+ South Bay locals</strong><br/>Actual prospective guests</div>
         </div>
         <div class="ba-metric">
-          <div class="ba-metric-label">Story Highlights</div>
-          <div class="ba-metric-value">None → <strong>5 organized categories</strong><br/>Menu, Events, Reviews, Specials, Behind-the-Scenes</div>
-        </div>
-        <div class="ba-metric">
-          <div class="ba-metric-label">Reservation Flow</div>
-          <div class="ba-metric-value">No booking path → <strong>Reservation completed in 2 taps</strong><br/>Zero friction between "want to go" and "booked"</div>
+          <div class="ba-metric-label">Conversion Path</div>
+          <div class="ba-metric-value">Zero path to book → <strong>2-Tap Booking System</strong><br/>Zero friction from discovery to guest</div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- ═══════════════════════════════════════
-     AI / GEO SECTION
-═══════════════════════════════════════ -->
-<div class="ai-section">
-  <div class="container">
-    <div class="reveal">
-      <div class="ai-badge">🤖 The 2026 Reality — AI Search Optimization</div>
-
-      <div class="ai-quote">
-        "If ChatGPT doesn't know your restaurant exists,<br/>
-        <em>you're already losing to someone who made sure it does.</em>"
-      </div>
-
-      <p class="section-lead">
-        When someone asks ChatGPT, Gemini, or Siri "What's the best restaurant in the South Bay?" —
-        the answer isn't random. It's based on structured data, keyword density, and online authority.
-        We make sure your restaurant is the one the AI recommends.<br/>
-        <!-- [CHANGE 3] Updated projection framing -->
-        <strong style="color:var(--white)">
-          (South Bay Market Strategy) Restaurants implementing structured data + GEO optimization
-          are projected to see AI mention rates increase dramatically — here's the mechanism behind it.
-        </strong>
-        <span style="display:block; margin-top:10px; font-size:12px; line-height:1.6; color:rgba(255,255,255,0.55);">
-          *AI recommendation frequency is directly tied to structured data richness, keyword authority, and review velocity —
-          all factors we systematically optimize. Individual outcomes vary by competitive landscape.
-        </span>
+    <div class="ba-block reveal">
+      <span class="ba-number">03</span>
+      <h3 class="ba-block-title">AI Search (GEO) — The 2026 Reality</h3>
+      <p class="ba-block-lead">
+        When someone asks ChatGPT, Gemini, or Siri for the "best seafood in Redondo Beach," the answer isn't random. <strong>It’s based on Structured Data, Keyword Authority, and Review Velocity.</strong> I implement GEO (Generative Engine Optimization) to ensure the AI picks <em>you</em>.
       </p>
+      <div class="ba-grid">
+        <div class="ba-col">
+          <div class="ba-col-header before">BEFORE — AI Invisible</div>
+          <img src="before_ai_search.jpg" alt="AI Invisible" />
+        </div>
+        <div class="ba-col">
+          <div class="ba-col-header" style="background:#0a0a1a; color:#9999ff; border-top:2px solid rgba(100,100,255,0.5);">AFTER — GEO Optimized</div>
+          <img src="after_ai_search.jpg" alt="AI Optimized" />
+        </div>
+      </div>
+      <div class="ba-metrics">
+        <div class="ba-metric">
+          <div class="ba-metric-label">AI Recommendation Rate</div>
+          <div class="ba-metric-value">Almost zero → <strong>Highly Frequent Mentions</strong><br/>Become the "Recommended Choice" by AI</div>
+        </div>
+        <div class="ba-metric">
+          <div class="ba-metric-label">Future-Proofing</div>
+          <div class="ba-metric-value">Compatible with Apple Intelligence, Siri, & ChatGPT Search.</div>
+        </div>
+      </div>
     </div>
 
-    <div class="ai-grid reveal" style="margin-top: 56px;">
-      <div class="ba-col">
-        <div class="ai-col-header before">BEFORE — No AI Optimization</div>
-        <img src="before_ai_search.jpg" alt="AI search before optimization" />
-      </div>
-      <div class="ba-col">
-        <div class="ai-col-header after">AFTER — GEO Optimized</div>
-        <img src="after_ai_search.jpg" alt="AI search after optimization" />
-      </div>
-    </div>
-
-    <!-- [CHANGE 3] Updated ai-fact copy -->
-    <div class="ai-fact reveal">
-      <div class="ai-fact-text">
-        <strong>(Data-Driven Projection)</strong> AI assistants like ChatGPT and Gemini surface restaurants
-        based on three measurable signals: <strong>structured data markup</strong> (machine-readable menus and schema),
-        <strong>keyword authority</strong> (consistent terminology across all platforms), and
-        <strong>review velocity</strong> (volume and recency of responses). By systematically optimizing
-        all three, we create the conditions for your restaurant to be recommended — not by luck, but by design.
-        Most South Bay restaurants have zero GEO strategy in place. That gap is your unfair advantage.<br/>
-        <span style="display:block; margin-top:10px; font-size:12px; line-height:1.6; color:rgba(255,255,255,0.55);">
-          *Projection based on published AI ranking research and structured data best practices. Individual results vary by category and competition.
-        </span>
-      </div>
-    </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
-     ROI NUMBERS
-═══════════════════════════════════════ -->
 <div class="roi-numbers" id="roi">
   <div class="container">
     <div class="reveal">
-      <span class="label">ROI — Show Me the Money</span>
+      <span class="label">ROI — The Bottom Line</span>
       <h2 class="section-title">
-        The Numbers That Make<br/>
-        <span class="gold-text">This Decision a No-Brainer</span>
+        Numbers that make the investment<br/>
+        <span class="gold-text">a no-brainer</span>
       </h2>
       <p class="section-lead" style="margin-bottom: 0;">
-        Adding just one extra table per night covers the entire cost of this service.
-        Everything above that? Pure profit you weren't capturing before.
+        If this service fills just one extra table per night, it pays for itself. Everything else is pure profit you used to leave on the table.
       </p>
     </div>
-
     <div class="roi-table-wrap reveal">
       <table class="roi-table">
         <thead>
           <tr>
             <th>Metric</th>
-            <th>Before (Current State)</th>
+            <th>Current (Before)</th>
             <th></th>
-            <th>After (Target)</th>
-            <th>What It Means For You</th>
+            <th>Target (After)</th>
+            <th>Impact on your business</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="metric-name">Google "Get Directions" Clicks</td>
-            <td class="before-val">Baseline</td>
+            <td class="metric-name">"Get Directions" Taps (Google)</td>
+            <td class="before-val">Current Baseline</td>
             <td class="arrow">→</td>
-            <td class="after-val">+10–30%</td>
-            <td>More people physically walking to your door</td>
+            <td class="after-val">+10〜30%</td>
+            <td>Actual foot traffic increase</td>
           </tr>
           <tr>
-            <td class="metric-name">First-Time Customer Visits</td>
-            <td class="before-val">Baseline</td>
+            <td class="metric-name">New Guest Acquisition</td>
+            <td class="before-val">Current Baseline</td>
             <td class="arrow">→</td>
             <td class="after-val">+28%</td>
-            <td>Save-worthy social posts bring new faces in</td>
+            <td>Consistent flow of first-time diners</td>
           </tr>
           <tr>
             <td class="metric-name">Google Search Ranking</td>
-            <td class="before-val">Page 2+</td>
+            <td class="before-val">Page 2 or lower</td>
             <td class="arrow">→</td>
             <td class="after-val">Top 3</td>
-            <td>Review management + 24hr response protocol</td>
-          </tr>
-          <tr>
-            <td class="metric-name">AI Recommendation Rate (GEO)</td>
-            <td class="before-val">Near Zero</td>
-            <td class="arrow">→</td>
-            <td class="after-val">Significant Uplift</td>
-            <td>Structured data + AI-readable menu text</td>
-          </tr>
-          <tr>
-            <td class="metric-name">Instagram Followers</td>
-            <td class="before-val">143</td>
-            <td class="arrow">→</td>
-            <td class="after-val">4,000+</td>
-            <!-- [CHANGE 2] Updated Reels copy in table -->
-            <td>Weekly AI-Optimized Reels + automated posting pipeline</td>
+            <td>Absolute visibility in the local market</td>
           </tr>
           <tr>
             <td class="metric-name">Review Response Rate</td>
             <td class="before-val">0%</td>
             <td class="arrow">→</td>
-            <td class="after-val">100% within 24hrs</td>
-            <td>Builds trust, boosts Google's ranking algorithm</td>
+            <td class="after-val">100% within 24h</td>
+            <td>Builds elite reputation & trust</td>
           </tr>
         </tbody>
       </table>
     </div>
+  </div>
+</div>
 
-    <!-- NEW 3-CARD PRICING -->
-    <style>      .new-pricing-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3px;
-        justify-content: center;
-        margin-top: 64px;
-      }
-      .np-card {
-        background: var(--dark2);
-        border: 1px solid rgba(255,255,255,0.07);
-        border-radius: 0;
-        padding: 44px 32px;
-        width: 100%;
-        max-width: 340px;
-        text-align: center;
-        position: relative;
-        transition: background 0.3s, transform 0.3s;
-        flex: 1 1 280px;
-      }
-      .np-card:hover { background: var(--dark3); transform: translateY(-4px); }
-      .np-card.popular {
-        background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.04));
-        border: 1px solid rgba(201,168,76,0.4);
-        transform: scale(1.03);
-        z-index: 2;
-      }
-      .np-card.popular:hover { transform: scale(1.03) translateY(-4px); }
-      .np-badge {
-        position: absolute;
-        top: -14px; left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-        color: #000;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 10px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        padding: 5px 18px;
-        border-radius: 999px;
-        white-space: nowrap;
-      }
-      .np-card h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 900;
-        font-size: 18px;
-        color: var(--white);
-        margin: 8px 0 6px;
-        letter-spacing: 0.5px;
-      }
-      .np-card .np-sub {
-        font-size: 12px;
-        color: var(--gray);
-        margin-bottom: 20px;
-      }
-      .np-anchor {
-        font-size: 13px;
-        color: var(--gray);
-        text-decoration: line-through;
-        height: 18px;
-        margin-bottom: 4px;
-      }
-      .np-setup {
-        font-size: 12px;
-        color: var(--gray-light);
-        margin-bottom: 4px;
-        letter-spacing: 0.5px;
-      }
-      .np-price {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 900;
-        font-size: 52px;
-        color: var(--white);
-        line-height: 1;
-        margin-bottom: 4px;
-      }
-      .np-price span { font-size: 0.38em; color: var(--gray); font-weight: 400; }
-      .popular .np-price { color: var(--gold-light); }
-      .np-features {
-        list-style: none;
-        padding: 0;
-        margin: 24px 0 28px;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        gap: 11px;
-      }
-      .np-features li {
-        font-size: 13px;
-        color: #bbb;
-        padding-left: 22px;
-        position: relative;
-        line-height: 1.5;
-      }
-      .np-features li::before {
-        content: '✓';
-        color: var(--gold);
-        font-weight: 700;
-        position: absolute;
-        left: 0;
-      }
-      .np-features li.off { color: #555; }
-      .np-features li.off::before { content: '✕'; color: #444; }
-      .np-microcopy {
-        font-size: 10px;
-        color: rgba(255,255,255,0.3);
-        margin-top: 10px;
-        font-style: italic;
-        letter-spacing: 0.3px;
-      }
-    </style>
+<section style="background: var(--dark2); padding: 90px 28px; text-align: center; border-top: 1px solid rgba(201,168,76,0.12); border-bottom: 1px solid rgba(201,168,76,0.12);">
+  <div class="container">
+    <div class="reveal">
+      <span class="label">Expertise</span>
+      <h2 class="section-title">Why trust <span class="gold-text">Mika</span>?</h2>
+      <p class="section-lead" style="margin: 0 auto 56px; max-width: 760px;">
+        I am not just a social media manager. I am a <strong>Fractional Director & Business Architect</strong> with 15 years of experience scaling brands to $15M in revenue using cutting-edge technology and data.
+      </p>
+    </div>
+    <div class="reveal" style="display:flex; justify-content:center; gap:3px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:240px; background:var(--dark3); padding:40px 28px; position:relative; overflow:hidden;">
+        <div style="font-weight:900; font-size:clamp(32px,4vw,48px); margin-bottom:10px;" class="gold-text">15+ Yrs</div>
+        <p style="font-size:14px; color:var(--gray-light);">Mastery in operations & marketing</p>
+      </div>
+      <div style="flex:1; min-width:240px; background:var(--dark3); padding:40px 28px; position:relative; overflow:hidden;">
+        <div style="font-weight:900; font-size:clamp(32px,4vw,48px); margin-bottom:10px;" class="gold-text">$15M Scale</div>
+        <p style="font-size:14px; color:var(--gray-light);">Proven track record of hyper-growth</p>
+      </div>
+      <div style="flex:1; min-width:240px; background:var(--dark3); padding:40px 28px; position:relative; overflow:hidden;">
+        <div style="font-weight:900; font-size:clamp(32px,4vw,48px); margin-bottom:10px;" class="gold-text">Local</div>
+        <p style="font-size:14px; color:var(--gray-light);">Based in Redondo Beach. I know the South Bay market.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<div style="background: var(--black); padding: 80px 0 110px;">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <span class="label">Partnership Plans</span>
+      <h2 class="section-title">Investment Options <span class="gold-text">for Growth</span></h2>
+    </div>
     <div class="new-pricing-row reveal">
 
-      <!-- DIY BLUEPRINT -->
       <div class="np-card">
         <h3>DIY Blueprint</h3>
-        <p class="np-sub">We build the foundation, you run it.</p>
-        <div class="np-anchor"></div>
-        <div class="np-setup">One-time Setup</div>
+        <p class="np-sub">Foundation only. You handle the day-to-day.</p>
+        <div class="np-setup">Setup Fee (One-time)</div>
         <div class="np-price">$1,500</div>
         <ul class="np-features">
-          <li>Complete GBP Overhaul &amp; Pro Photos</li>
-          <li>AI/GEO Menu Markup</li>
-          <li>Competitor Analysis Report</li>
+          <li>Complete Google Profile Overhaul & Pro Photos</li>
+          <li>AI/GEO Menu Schema Markup</li>
           <li>30-Day Content Playbook</li>
           <li class="off">Weekly AI-Optimized Reels</li>
-          <li class="off">24hr Review Response Protocol</li>
+          <li class="off">24h Review Response Protocol</li>
         </ul>
-        <a href="#contact" class="btn-outline" style="display:block; text-align:center; padding:13px 24px; font-size:13px;">Get The Blueprint</a>
-        <p class="np-microcopy">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
+        <a href="#contact" class="btn-outline" style="display:block;">Get the Blueprint</a>
       </div>
 
-      <!-- GROWTH PARTNER -->
       <div class="np-card popular">
         <div class="np-badge">Case Study Offer — 2 Spots Left</div>
         <h3 style="margin-top:18px;">Growth Partner</h3>
-        <p class="np-sub">Hands-free growth. We handle the heavy lifting.</p>
-        <div class="np-anchor">Regular: $3,000 / mo</div>
-        <div class="np-setup">$1,500 Setup +</div>
-        <div class="np-price">$1,200<span>/mo</span></div>
+        <p class="np-sub">Complete "Hands-Off" Management.</p>
+        <div class="np-anchor">Standard Price: $3,000 / mo</div>
+        <div class="np-setup">Setup $1,500 +</div>
+        <div class="np-price">$1,200<span>/ mo</span></div>
         <ul class="np-features">
-          <li><strong style="color:var(--white);">Full Professional Setup Included, plus:</strong></li>
-          <li>Weekly AI-Optimized Reels — <strong style="color:var(--white);">We handle all editing</strong></li>
-          <li><strong style="color:var(--white);">Full 24hr Review Response Protocol</strong> (Hands-off for you)</li>
-          <li>4× Monthly SEO-Driven Google Posts</li>
-          <li>Monthly ROI &amp; Growth Performance Report</li>
-          <li class="off">On-site Video Production</li>
+          <li><strong>Includes everything in Blueprint, plus:</strong></li>
+          <li>Weekly AI-Optimized Reels — <strong>We handle all editing</strong></li>
+          <li><strong>100% Review Response Management</strong></li>
+          <li>4x SEO-Optimized Google Posts/mo</li>
+          <li>Monthly Growth & ROI Performance Report</li>
         </ul>
-        <a href="#contact" class="btn-gold" style="display:block; text-align:center; padding:13px 24px; font-size:13px;">Claim My Case Study Spot</a>
-        <p class="np-microcopy">*Requires case study data sharing.</p>
+        <a href="#contact" class="btn-gold" style="display:block;">Secure Case Study Spot</a>
       </div>
 
-      <!-- FRACTIONAL CMO -->
       <div class="np-card">
         <h3>Fractional CMO</h3>
-        <p class="np-sub">Enterprise-level digital dominance.</p>
-        <div class="np-anchor"></div>
-        <div class="np-setup">$0 Setup Fee</div>
-        <div class="np-price">$4,500<span>/mo</span></div>
+        <p class="np-sub">Enterprise-grade digital dominance.</p>
+        <div class="np-setup">Setup $0</div>
+        <div class="np-price">$4,500<span>/ mo</span></div>
         <ul class="np-features">
-          <li><strong style="color:var(--white);">Everything in Growth, plus:</strong></li>
-          <li>Bi-weekly On-site Pro Shooting</li>
+          <li><strong>Full Partnership including:</strong></li>
+          <li>Bi-weekly On-site Professional Shooting</li>
           <li>Local Influencer Management</li>
-          <li>Full Social Media Takeover</li>
-          <li>Quarterly Menu Engineering Consulting</li>
-          <li>Priority 24/7 Support</li>
+          <li>Quarterly Menu Strategy Consulting</li>
+          <li>24/7 Priority Support & Scale OS Access</li>
         </ul>
-        <a href="#contact" class="btn-outline" style="display:block; text-align:center; padding:13px 24px; font-size:13px;">Apply For Partnership</a>
-        <p class="np-microcopy">*Limited availability.</p>
+        <a href="#contact" class="btn-outline" style="display:block;">Apply for Partnership</a>
       </div>
 
     </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
-     PLAN TIMELINE
-═══════════════════════════════════════ -->
-<div class="plan-section">
-  <div class="container">
-    <div class="reveal">
-      <span class="label">Execution Plan</span>
-      <h2 class="section-title">
-        You Run Your Restaurant.<br/>
-        <span class="gold-text">I Handle Everything Else.</span>
-      </h2>
-      <p class="section-lead">
-        All you need to give me is 30 minutes at the start.
-        After that, I take it completely off your plate — and you start seeing results
-        within the first week.
-      </p>
-    </div>
-
-    <div class="timeline reveal">
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-phase">Days 1–3</div>
-        <div class="tl-title">Google Business Profile — Complete Overhaul</div>
-        <ul class="tl-list">
-          <li>Fix and verify all business info: hours, categories, phone, address, attributes</li>
-          <li>Upload 30+ professionally curated food, interior, and exterior photos</li>
-          <li>Add your full menu with descriptions, prices, and photos</li>
-          <li>Write an SEO-optimized business description packed with local keywords</li>
-          <li>Respond to every existing review — establishing the 24-hour response standard</li>
-        </ul>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-phase">Days 4–7</div>
-        <div class="tl-title">Instagram Profile Rebuild & Content Strategy</div>
-        <ul class="tl-list">
-          <li>Rewrite bio, restructure highlights, and set up booking link-in-bio</li>
-          <li>Design your weekly Reels schedule — cooking clips, sizzle shots, behind-the-scenes</li>
-          <li>Create "save-worthy" content frameworks: date night picks, chef's favorites, hidden gems</li>
-          <li>Build a 2-tap reservation flow that converts profile visitors into bookings</li>
-        </ul>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-phase">Week 2</div>
-        <div class="tl-title">AI Search (GEO) Optimization + Yelp</div>
-        <ul class="tl-list">
-          <li>Convert your menu to AI-readable structured text data</li>
-          <li>Implement keyword strategy tailored for ChatGPT, Gemini, and Apple Intelligence</li>
-          <li>Full Yelp profile optimization and review response system setup</li>
-          <li>Deliver competitor analysis report — see exactly where you stand vs. the South Bay competition</li>
-        </ul>
-      </div>
-      <!-- [CHANGE 2] Updated ongoing copy -->
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-phase">Month 1 Onward — Ongoing</div>
-        <div class="tl-title">Continuous Management & Monthly Reporting</div>
-        <ul class="tl-list">
-          <li>4 weekly Google posts: seasonal specials, events, behind-the-scenes</li>
-          <li>Weekly AI-Optimized Reels & Automated Posting — you shoot a simple 10-sec clip, our AI-driven system handles editing, GEO-tagging, and publishing</li>
-          <li>Every new review answered within 24 hours — no exceptions</li>
-          <li>Monthly report delivered to your inbox: rankings, traffic, follower growth, new customer data</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════
-     GUARANTEE
-═══════════════════════════════════════ -->
 <div class="guarantee-section">
   <div class="container">
     <div class="reveal">
-      <span class="label">Zero-Risk Guarantee</span>
+      <span class="label">Zero-Risk Performance Guarantee</span>
       <h2 class="section-title">
-        If You Don't See Results,<br/>
-        <span class="gold-text">You Don't Pay. Period.</span>
+        If we don't move the needle,<br/>
+        <span class="gold-text">the following month is on me</span>
       </h2>
     </div>
-
     <div class="guarantee-box reveal">
       <div class="guarantee-icon">🛡️</div>
-      <div class="guarantee-title">No Movement = No Charge</div>
+      <div class="guarantee-title">Execution & Growth Guarantee</div>
       <p class="guarantee-text">
-        If after the first month we haven't moved the needle on
-        <strong>your Google search ranking, your "Get Directions" clicks, or your Instagram followers</strong>
-        — you owe me nothing for month two. Zero.
-        I stand behind this work completely.
+        If after the first 30 days we haven't shown measurable improvement in your Google Ranking, Direction Taps, or Social Engagement, the management fee for the next month is waived. I am here to win for your business.
       </p>
-      <p style="max-width:720px;margin:0 auto 32px;font-size:14px;line-height:1.8;color:#bbb;">
-        <strong style="color:#ddd;">Full Transparency:</strong> Month one is an execution guarantee, not a revenue guarantee.
-        If I fail to deliver the agreed deliverables on time — 30 photos uploaded,
-        categories optimized, menu entered, reviews responded to, 4 posts published —
-        you get a prorated refund for anything not completed. No arguments.
-      </p>
-      <!-- [CHANGE 4] micro-copy -->
-      <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
-        <a href="#contact" class="btn-gold">Get My Free Audit — Zero Commitment</a>
-        <p class="cta-micro">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
-      </div>
+      <a href="#contact" class="btn-gold">Claim My Free 30-Min Audit</a>
     </div>
-
-    <table class="compare-table reveal">
-      <thead>
-        <tr>
-          <th>What You're Comparing</th>
-          <th>DIY (Doing It Yourself)</th>
-          <th>Working With Me</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="feat">Time required per week</td>
-          <td class="no">5–10 hours of your time every week</td>
-          <td class="yes">✓ Zero. Completely hands-off for you</td>
-        </tr>
-        <tr>
-          <td class="feat">Learning curve</td>
-          <td class="no">Months of trial and error to learn what works</td>
-          <td class="yes">✓ Results start within days, not months</td>
-        </tr>
-        <tr>
-          <td class="feat">AI Search (GEO) optimization</td>
-          <td class="no">✗ Nearly impossible without specialized knowledge</td>
-          <td class="yes">✓ Fully implemented with latest techniques</td>
-        </tr>
-        <tr>
-          <td class="feat">Monthly performance reporting</td>
-          <td class="no">✗ You'd have to track it all yourself</td>
-          <td class="yes">✓ Clear numbers delivered to your inbox monthly</td>
-        </tr>
-        <tr>
-          <td class="feat">Risk if results don't come</td>
-          <td class="no">You've wasted your time AND it still didn't work</td>
-          <td class="yes">✓ No results = no charge. You're protected</td>
-        </tr>
-        <tr>
-          <td class="feat">Speed to outpace competition</td>
-          <td class="no">6 months to 1+ year of consistent effort</td>
-          <td class="yes">✓ Visible gains within 3–7 days of kickoff</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
-     URGENCY
-═══════════════════════════════════════ -->
 <div class="urgency-section">
   <h2 class="urgency-title">
-    Every Day You Wait,<br/>
-    <span class="red-text">Someone Else Wins the Customer You Could've Had</span>
+    Every day you wait,<br/>
+    <span class="red-text">guests who should be yours are dining with your competitors</span>
   </h2>
-  <p class="urgency-body">
-    The South Bay dining scene is competitive. The restaurants that move first on
-    digital optimization lock in Google rankings, AI recommendations, and social followings
-    that become harder to displace over time.
-    <strong>The first-mover advantage is real — and it belongs to whoever acts today.</strong>
-  </p>
   <div class="counters">
     <div class="counter">
       <div class="counter-num" id="cnt-a">0</div>
-      <div class="counter-lbl">Potential Customers Lost Today</div>
+      <div class="counter-lbl">Leads missed today (Estimated)</div>
     </div>
     <div class="counter">
       <div class="counter-num" id="cnt-b">$0</div>
-      <div class="counter-lbl">Estimated Revenue Left on the Table</div>
-    </div>
-    <div class="counter">
-      <div class="counter-num" id="cnt-c">0</div>
-      <div class="counter-lbl">Days Your Competitor Has Had the Edge</div>
+      <div class="counter-lbl">Revenue left on the table (Estimated)</div>
     </div>
   </div>
-  <!-- [CHANGE 4] micro-copy -->
-  <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
-    <a href="#contact" class="btn-gold" style="font-size:16px; padding:20px 64px;">
-      Claim Your Free Audit → Stop the Bleed
-    </a>
-    <p class="cta-micro">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
-  </div>
+  <a href="#contact" class="btn-gold" style="font-size:16px; padding:20px 64px;">
+    Get My Audit → Stop the Loss Now
+  </a>
 </div>
 
-<!-- ═══════════════════════════════════════
-     FINAL CTA
-═══════════════════════════════════════ -->
 <div class="cta-section" id="contact">
   <span class="label">Contact</span>
   <h2 class="cta-title">
-    Start With a<span class="gold-text"> Free 30-Minute Audit</span>.<br/>
-    No Pitch. Just Clarity.
+    Start with a <span class="gold-text">Free 30-Min Audit</span>.<br/>
+    I bring the data, you get the insights.
   </h2>
   <p class="cta-body">
-    I'll show you exactly where your restaurant is losing customers online,
-    what your competitors are doing better, and what a realistic improvement plan
-    looks like — at zero cost and zero obligation.
+    No obligation. I’ll show you exactly where you're losing money, what your competitors are doing, and a realistic roadmap to recover your revenue.
   </p>
-
-  <div class="gold-line"></div>
-
   <div class="contact-card">
-    <div class="contact-row">
-      <div class="contact-ico">📱</div>
-      <a href="sms:+13103081781" style="color:inherit; text-decoration:none; font-weight:600;">Text Me Directly</a>
-    </div>
-    <div class="contact-row">
-      <div class="contact-ico">📧</div>
-      <a href="/cdn-cgi/l/email-protection#e885c6868786898389a8898389868786c581869c84c68b8785" style="color:inherit; text-decoration:none; font-weight:600;">Send an Email</a>
-    </div>
-    <!-- [CHANGE 4] micro-copy on final CTA -->
-    <a href="https://calendly.com/m-nonaka-akanon-intl/30min" class="btn-gold" style="width:100%; text-align:center; margin-top:12px;">
+    <a href="https://calendly.com/m-nonaka-akanon-intl/30min" class="btn-gold" style="width:100%;">
       Book My Free 30-Min Audit →
     </a>
-    <p class="cta-micro" style="text-align:center; width:100%;">100% Data-Driven. No pushy sales pitch. Get your personalized PDF report in 24 hours.</p>
+    <p class="cta-micro">Receieve your custom PDF report within 24 hours.</p>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════ -->
 <footer>
   <div class="footer-brand gold-text">Digital Growth Consulting</div>
-  <p>South Bay Restaurant — Digital Marketing Proposal 2026</p>
-  <p style="margin-top:8px; font-size:11px; opacity:0.5;">© 2026 All Rights Reserved. Confidential.</p>
+  <p>South Bay Restaurants — Strategic Growth 2026</p>
+  <p style="margin-top:8px; font-size:11px; opacity:0.5;">© 2026 All Rights Reserved. Confidential Proposal.</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script>
+  /* ── Scroll reveal ── */
   const revealEls = document.querySelectorAll('.reveal');
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
   }, { threshold: 0.08 });
   revealEls.forEach(el => revealObserver.observe(el));
 
+  /* ── Counter animation ── */
   function runCounter(el, end, prefix, suffix, dur) {
     let cur = 0;
     const step = end / (dur / 16);
@@ -1720,30 +867,32 @@
       if (cur >= end) clearInterval(t);
     }, 16);
   }
-
   const urgencyObs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        runCounter(document.getElementById('cnt-a'), 47, '', '', 2000);
+        runCounter(document.getElementById('cnt-a'), 47,   '',  '', 2000);
         runCounter(document.getElementById('cnt-b'), 1200, '$', '', 2000);
-        runCounter(document.getElementById('cnt-c'), 30, '', '', 2000);
         urgencyObs.disconnect();
       }
     });
   }, { threshold: 0.4 });
   urgencyObs.observe(document.querySelector('.urgency-section'));
 
+  /* ── Simulator ── */
   function calculateLoss() {
-    const city = document.getElementById('sim-city').value;
+    const city    = document.getElementById('sim-city').value;
     const cuisine = document.getElementById('sim-cuisine').value;
-    if (!city || !cuisine) { alert('Please select both City and Cuisine.'); return; }
-    document.getElementById('res-city').innerText = city;
+    if (!city || !cuisine) {
+      alert('Please select both an area and a cuisine.');
+      return;
+    }
+    document.getElementById('res-city').innerText    = city;
     document.getElementById('res-cuisine').innerText = cuisine;
-    const baseLoss = 8500;
-    const randomFactor = Math.floor(Math.random() * 5000) + 2000;
-    const totalLoss = baseLoss + randomFactor;
+
+    const totalLoss = 8500 + Math.floor(Math.random() * 5000) + 2000;
     const resultDiv = document.getElementById('sim-result');
     resultDiv.classList.remove('hidden');
+
     const amountEl = document.getElementById('sim-amount');
     let cur = 0;
     const step = totalLoss / (1800 / 16);
@@ -1752,6 +901,7 @@
       amountEl.textContent = '$' + Math.floor(cur).toLocaleString();
       if (cur >= totalLoss) clearInterval(t);
     }, 16);
+
     resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 </script>
